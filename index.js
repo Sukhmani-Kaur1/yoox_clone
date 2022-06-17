@@ -33,3 +33,48 @@ function customerCare(){
             document.getElementById("customer_care").style.display="none";
         }
 }
+
+
+
+// let obj=[{
+//     "a":12 
+// },
+// {
+//     "b":13
+// },
+// {
+//    "c":14
+// },
+// {
+//     "c":14
+//  },
+//  {
+//     "c":14
+//  },
+//  {
+//     "c":14
+//  },
+//  {
+//     "c":14
+//  },
+//  {
+//     "c":14
+//  },
+//  {
+//     "c":14
+//  },
+//  {
+//     "c":14
+//  },
+//  {
+//     "c":14
+//  },
+// {
+//     "d":15
+// }]
+
+// localStorage.setItem("Data",JSON.stringify(obj))
+// let cartCount=JSON.parse(localStorage.getItem("Data"))
+// document.getElementById("bag_count").innerText=cartCount.length
+// console.log(cartCount.length)
+
