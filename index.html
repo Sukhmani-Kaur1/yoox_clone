@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/5b0f9a8720.js" crossorigin="anonymous"></script>
+    <style>
+        #nav1{
+            width: 100%;
+            height: 37px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            position:fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1;
+            background-color: white;
+        }
+        #nav1_left{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: -100px;
+        }
+        #countries:hover,#cust_care:hover,#reg:hover,#log:hover{
+            background-color: rgb(240, 239, 239);
+            /* padding: 0px 7px 0px 7px; */
+            text-decoration: none;
+        }
+
+        #countries,#cust_care,#reg,#log{
+            text-decoration: underline;
+            padding-left: 7px;
+            padding-right: 7px ;
+        }
+        #reg,#log{
+            display: flex;
+        }
+        #reg>i,#log>i{
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        #nav1_right{
+            width: 100px;
+            display: flex;
+            justify-content:space-between; 
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #nav2{
+            margin-top: 37px;
+            width: 100%;
+            height: 60px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            position:fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1;
+            background-color: white;
+        }
+        #nav2_left{
+            margin-left: 60px;
+            width: 260px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #YooxLogo>img{
+            height: 100px;
+         
+        }
+        #nav2_right{
+            margin-right: 110px;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold; 
+        }
+        #offer_img{
+            margin-top: 97px;
+        }
+        #offer_img>img{
+            width: 100%;
+        }
+        #one{
+           position: absolute;
+           width: 80%;
+           left: 0;
+        }
+        #two{
+           position: relative;
+           margin-top: 65px;
+           width: 100%;
+           left: 0;
+        }
+        body{
+            background-color: rgb(239, 237, 237);
+        }
+        #offer_img>h3{
+            margin-left: 39%;
+            position: relative;
+            margin-top: -760px;
+            color: rgb(10, 10, 10);
+        }
+        #offer_img>p{
+            margin-left: 36%;
+            position: relative;
+            margin-top: -760px;
+            color: rgb(10, 10, 10);
+            
+        }
+        #love_yourself{
+            width: 390px;
+            height: 140px;
+            background-color: #ffffff;
+            margin-top: 1260px;
+            margin-left: 15px;
+            /* z-index: 1; */
+            position: relative;
+            line-height: 20px;
+            padding: 18px 28px;
+        }
+        #ss22_collections{
+            width: 400px;
+            height: 140px;
+            background-color: #ffffff;
+            margin-top: 535px;
+            margin-left: 165px;
+            z-index: 1;
+            position: relative;
+            line-height: 20px;
+            padding: 18px 28px;
+        }
+        #designer_1{
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-left: 6.8%;
+            margin-top: 150px;
+            width: 85%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+        }
+        #multi_form,#ward_heros{
+            /* border: 1px solid teal; */
+            width: 400px;
+            height: auto;
+            text-align: center;
+            /* padding: 8px 25px; */
+        }
+        #multi_form>img,#ward_heros>img{
+            width: 100%;
+        }
+        #multi_form>h1,#ward_heros>h1{
+           font-size: 24px;
+        }
+        #designers{
+            width: 380px;
+            height: 500px;
+            border: 0px solid teal;
+            text-align: center;
+            line-height: 10px;
+            background-color: #ffffff;
+            position: relative;
+            margin: auto;
+            margin-top: 100px;
+            padding-top: 40px;
+        }
+        #design_head>h4{
+            color: rgb(39, 38, 38);
+            font-weight: lighter;
+            font-family: sans-serif;
+            padding-bottom: 40px;
+
+        }
+        #viewall_1>h4{
+            padding: 30px 0px 30px  0px;
+            color: rgb(39, 38, 38);
+            font-weight: lighter;
+            font-family: sans-serif;
+            text-decoration: underline;
+            
+        }
+        #women:hover,#men:hover,#kids:hover,#design_art:hover{
+            background-color: yellow;
+            height: 6px;
+           
+        }
+        #dolce_gabbana:hover,#roberto_cavalli:hover,#stella_mccartney:hover,#maison_margiela:hover,#marni:hover,#chloe:hover,#versace:hover,#balenciaga:hover,#gucci:hover,#prada:hover{
+            color: rgb(181, 175, 175);
+        }
+        #new_arrivals>h1{
+            margin: auto;
+            text-align: center;
+            margin-top: 300px;
+            font-weight: lighter;
+            font-size: 28px;
+        }
+        #new_arrivals>h4{
+            text-align: center;
+        }
+        #viewall_2:hover, #inspired:hover,#shop:hover{
+            color: grey;
+        }
+        #new_arrival{
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            width: 80%;
+            text-align: center;
+        }
+        #card1,#card2,#card3{
+            width: 32%;
+            height: auto;
+            background-color: white;
+            /* border: 1px solid teal; */
+            line-height: 10px;
+        }
+        #str_off{
+            text-decoration: line-through;
+            margin-right: 20px;
+            color: grey;
+        }
+        #new_arrival_2{
+            width: 100%;
+            height: 1000px;
+            background-color: white;
+            margin-top: 50px;
+            align-items: center; 
+        }
+        #box_outer{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 1000px;
+            margin: auto;
+            /* border: 1px solid teal; */
+            position: absolute;
+            margin-left: 60px;
+        }
+        #lets_twist,#levis{
+            width: 31%;
+            height: 700px;
+            /* border: 1px solid; */
+            margin-top: 150px;
+            text-align: center;
+        }
+        #lets_twist>img,#levis>img{
+            width: 100%;
+        }
+        #montnlang{
+            width:420px;
+            position: relative;
+            margin: auto;
+            margin-top: -870px;
+            text-align: center;
+        }
+        #montnlang>img{
+            width: 100%;
+        }
+        #one_of_a_kind{
+            margin-top: 300px;
+        }
+        #one_of_a_kind>h1{
+            text-align: center;
+            font-weight: lighter;
+            font-size: 28px;
+            margin-top: 70px;
+        }
+        #one_of_a_kind>h4{
+            text-align: center;
+        }
+        #card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11,#card12{
+            width: 25%;
+            height: auto;
+            background-color: white;
+            text-align: center;
+        }
+        #carousal{
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            overflow: auto;
+            max-width: 1200px;
+            margin: auto;
+            gap: 25px;
+        }
+        img{
+            width: 100%;
+        }
+        #where_people_dance{
+            width: 65%;
+            margin-left:150px ;
+            margin-top: 100px;
+            position: absolute;
+        }
+        #get_inspired{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #lower_impact{
+            width: 20%;
+            height: 500px;
+            background-color: white;
+            text-align: center;
+            line-height: 5px;
+            position: relative;
+            margin-top: -550px;
+            margin-left: 920px;
+            padding-top: -10px;
+        }
+        #last_div{
+            display: flex;
+            margin: auto;
+            margin-top: 100px;
+            width: 100%;
+            border: 0px solid teal;
+            left: 0;
+        }
+        #last_div>img{
+            width: 50%;
+        }
+        #out_of_office{
+            width: 400px;
+            height: 140px;
+            background-color: #ffffff;
+            margin-top: -180px;
+            margin-left: 870px;
+            /* z-index: 1; */
+            position: relative;
+            line-height: 20px;
+            padding: 18px 28px;
+        }
+        #crazy_mood{
+            width: 400px;
+            height: 140px;
+            background-color: #ffffff;
+            margin-top: -200px;
+            margin-left: 10px;
+            /* z-index: 1; */
+            position: relative;
+            line-height: 20px;
+            padding: 18px 28px;
+        }
+        .carousel-inner{
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: auto;
+        }
+        #search_bar{
+            width: 300px;
+            display: none;
+            height: 40px;
+            border-radius: 5px;
+            border: 0.2px solid grey;
+        }
+        #select{
+            display: flex;
+            text-align: center;
+            width: 45%;
+            margin: auto;
+        }
+        .women,.men,#checkbox{
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+        #f,#m{
+            margin-top: -10px;
+             width: 10px;
+        }
+        #bottom_info{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-between;
+            text-align: center; 
+
+        }
+        #b3{
+            width: 300px;
+            background-color: white;
+            padding: 10px 20px;
+            margin-bottom: 50px;
+        }
+        #b1,#b2{
+            width: 110px;
+        }
+        .insert_email{
+            width: 80%;
+            height: 30px;
+        }
+        #btn1{
+            width: 80%;
+            height: 40px;
+            background-color: rgb(41, 40, 40);
+            color: white;
+            border: 0;
+        }
+        #customer_care{
+            width: 300px;
+            height: auto;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            margin-top: -5920px;
+            margin-left: 100px;
+            z-index: 1;
+            display: none;
+        }
+        #icons{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            align-items: center; padding: 10px;
+        }
+        #icon1,#icon2{
+            background-color: rgb(232, 229, 229);
+            width: 85px;
+            height: 80px;
+            padding-top: 10px;
+            padding-bottom: -10px;
+            /* padding-left: 0px; */
+           
+        }
+        #icon1>p,#icon2>p{
+            font-size: x-small;
+        }
+        #area{
+            background-color: rgb(39, 38, 38);
+            padding: 15px;
+            color: white;
+        }
+        #footer_1{
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            margin: auto;
+        }
+        /* #footer_left,#footer_right{
+           
+            width: 1500px;
+        } */
+        #footer_left{
+            width: 25%;
+            align-items: center;
+             display: flex;
+             justify-content: space-between;
+        }
+       #bottom_line{
+        width: 100%;
+        padding: 50px 0px;
+        background-color: rgb(43, 42, 42);
+        color: white;
+        text-align: center;
+       }
+       #bottom_line>p{
+        font-size: smaller;
+       }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <!-- navbar1 -->
+
+        <div id="nav1">
+            <div id="nav1_left">
+                <div id="countries"><p>COUNTRY</p></div>
+                <div id="cust_care"><p>CUSTOMER CARE</p> </div>
+            </div>
+            <div id="nav1_right">
+                <div id="reg"><i class="material-icons">edit</i><p>REGISTER</p></div>
+                <div id="log"><i class="material-icons">lock_open</i><p>LOGIN</p></div>
+            </div>
+        </div>
+
+    <!-- navbar-2 -->
+
+        <div id="nav2">
+            <div id="nav2_left">
+                <div id="women"><p>WOMEN</p></div>
+                <div id="men"><p>MEN</p></div>
+                <div id="kids"><p>KIDS /</p></div>
+                <div id="design_art"><p>DESIGN+ART</p></div>
+            </div>
+            <div id="YooxLogo">
+                <img src="images/yoox logo.png" alt="">
+            </div>
+            <input type="text" id="search_bar">
+            <div id="nav2_right">
+                
+                <i id="click_btn" class="material-icons">search</i>
+                <i class="material-icons">favorite_border</i>
+                <i class="material-icons">shopping_bag</i>
+            </div>
+        
+        </div>
+
+        <!-- navbar-3 -->
+
+        <div id="nav3">
+
+        </div>
+        <!-- offer image -->
+        <div id="offer_img">
+            <img id="one" src="https://www.yoox.com/images/yoox80/banners/6862_3_Premium_DM.png?634485886884413664#width=1379&height=67" alt="">
+            <img id="two" src="https://www.yoox.com/images/yoox80/banners/6895_1_Pride_Main_WM.jpg?634485886884413664&impolicy=cropDefault&width=960&height=510" alt="">
+            <h3>WARDROBE HEROES: UPTO 80% OFF</h3>
+            <p>Ends 18/6</p>
+
+            <div id="love_yourself">
+                <h1>JUST LOVE YOURSELF</h1>
+                <h4>Share your pride</h4>
+                <p>RIGHT THIS WAY > </p>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- designers -->
+
+            <div id="designer_1">
+                <div id="ward_heros">
+                    <img src="https://www.yoox.com/images/yoox80/banners/6862_1_HL_DM_UK.png?634485886884413664#width=430&height=600" alt="">
+                    <h1>UP TO 80% OFF</h1>
+                    <p>Prices as marked.</p>
+                    <h5><u>SHOP NOW</u></h5>
+                </div>
+                <div id="multi_form">
+                    <img src="https://www.yoox.com/images/yoox80/banners/5628_1_Multiform_HL.gif?634485886884413664#width=430&height=600" alt="">
+                    <h1>THE MULTI FORM * ARTISTS</h1>
+                    <p>Discover the exclusive designs</p>
+                    <h5><u>SHOP NOW</u></h5>
+                </div>
+            </div>
+            <div id="designers">
+                <div id="design_head"><h4>DESIGNER</h3></div>
+                <div id="brands">
+                    <h4 id="dolce_gabbana">DOLCE & GABBANA</h4>
+                    <h4 id="roberto_cavalli">ROBERTO CAVALLI</h4>
+                    <h4 id="stella_mccartney">STELLA MCCARTNEY</h4>
+                    <h4 id="maison_margiela">MAISON MARGIELA</h4>
+                    <h4 id="marni">MARNI</h4>
+                    <h4 id="chloe">CHLOÉ</h4>
+                    <h4 id="versace">VERSACE</h4>
+                    <h4 id="balenciaga">BALENCIAGA</h4>
+                    <h4 id="gucci">GUCCI</h4>
+                    <h4 id="prada">PRADA</h4>
+                </div>
+                <div id="viewall_1"><h4>VIEW ALL</h4></div>
+            </div>
+
+            <!-- new arrivals -->
+            <div id="new_arrivals">
+                <h1>NEW ARRIVALS</h1>
+                <h4 id="viewall_2"><u>VIEW ALL</u></h4>
+            </div>
+            
+            <div id="new_arrival">
+                <div id="card1">
+                    <img src="https://www.yoox.com/images/items/12/12793777DM_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>SEE BY CHLOÉ</h4>
+                    <p>T-shirt</p>
+                    <p>€235.00</p>
+                </div>
+                <div id="card2">
+                    <img src="https://www.yoox.com/images/items/46/46851471DU_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>8 By YOOX</h4>
+                    <p>Sunglasses</p>
+                    <p>€55.00</p>
+                </div>
+                <div id="card3">
+                    <img src="https://www.yoox.com/images/items/13/13792883EJ_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+            </div>
+
+            <div id="new_arrival_2">
+                <div id="box_outer">
+                    <div id="lets_twist">
+                        <img src="https://www.yoox.com/images/yoox80/banners/6825_1_Balenciaga_W_Tris.jpg?634485886884413664#width=473&height=660" alt="">
+                        <h2>LET'S TWIST!</h2>
+                        <h4>Check out the new Balenciaga Eyewear</h4>
+                    </div>
+                    <div id="levis">
+                        <img src="https://www.yoox.com/images/yoox80/banners/6825_3_Levis_W_Tris.jpg?634485886884413664#width=473&height=660" alt="">
+                        <h2>LEVI'S</h2>
+                        <h4>A style icon since 1873</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="montnlang">
+                <img src="https://www.yoox.com/images/yoox80/banners/6825_5_Montblanc_W_Tris.jpg?634485886884413664#width=473&height=660" alt="">
+                <h2>MONTNLANG</h2>
+                <h4>The New Gift Generation</h4>
+            </div>
+
+            <div id="one_of_a_kind"><h1>ONE OF A KIND</h1><h4><u>VIEW ALL</u></h4></div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://www.yoox.com/images/items/12/12779290QW_14_f.jpg?impolicy=crop&width=306&height=390" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.yoox.com/images/items/15/15204227CD_14_f.jpg?impolicy=crop&width=306&height=390" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.yoox.com/images/items/13/13780367GR_14_f.jpg?impolicy=crop&width=306&height=390" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+            <!-- <div id="carousal"> -->
+
+                <!-- <div id="card4">
+                    <img src="https://www.yoox.com/images/items/12/12779290QW_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card5">
+                    <img src="https://www.yoox.com/images/items/15/15204227CD_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card6">
+                    <img src="https://www.yoox.com/images/items/13/13780367GR_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card7">
+                    <img src="https://www.yoox.com/images/items/45/45654589VI_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card8">
+                    <img src="https://www.yoox.com/images/items/15/15201219LR_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card9">
+                    <img src="https://www.yoox.com/images/items/50/50273030JO_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card10">
+                    <img src="https://www.yoox.com/images/items/13/13783735VK_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card11">
+                    <img src="https://www.yoox.com/images/items/15/15204729EO_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div>
+                <div id="card12">
+                    <img src="https://www.yoox.com/images/items/12/12784657QK_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>MISSONI</h4>
+                    <p>Long skirt</p>
+                    <p id="off"><span id="str_off">€904.00</span>40% off</p>
+                    <p>€536.00</p>
+                </div> -->
+            <!-- </div> -->
+
+            <div id="where_people_dance">
+                    <img src="https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886884413664#width=930&height=660" alt="">
+            </div>
+            <div id="ss22_collections">
+                <h1>WHERE PLEOPLE DANCE</h1>
+                <h4>The new SS22 collecton from 8 by YOOX</h4>
+                <div id="get_inspired">
+                    <p id="shop"><u>SHOP NOW</u></p>
+                    <P id="inspired"><u>GET INSPIRED</u></P>
+                </div>
+                
+            </div>
+            <div id="lower_impact">
+                    <img src="https://www.yoox.com/images/items/12/12700141NG_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h4>8 by YOOX</h4>
+                    <p>crop top</p>
+                    <p id="off"><span id="str_off">€60.00</span>35% off</p>
+                    <p>€39.00</p>
+            </div>
+
+            <div id="last_div">
+                <img src="https://www.yoox.com/images/yoox80/banners/5460_1_Living_Bottom_WM.jpg?634485886884413664#width=690&height=637" alt="">
+                 <img src="https://www.yoox.com/images/yoox80/banners/6824_1_Trendvacation_HalfBottom_W.jpg?634485886884413664#width=690&height=637" alt="">
+                 
+            </div>
+            <div id="crazy_mood">
+                <h1>CRAZY MOOD</h1>
+                <h4>The new photoshoot by Living Corriere</h4>
+                <div id="mood">
+                    <p><u>DISCOVER MORE</u></p>
+                </div>
+            </div>
+            <div id="out_of_office">
+                <h1>OUT OF OFFICE</h1>
+                <h4>Vibrant holiday style</h4>
+                <div id="office">
+                    <p><u>Discover the trend</u></p>
+                    <p><u>Shop now</u></p>
+                </div>
+                
+            </div>
+
+            <div id="bottom_info">
+                <div id="b1">
+                    <h3>NEW TO YOOX</h3>
+                    <p>Shopping guide</p>
+                    <p>iPhone/iPad/Android</p>
+                    <p>Browse all Designers</p>
+                    <p>Browse all Catagories </p>
+                </div>
+
+                <div id="b2">
+                    <h3>HELP</h3>
+                    <p>Delivery times & costs</p>
+                    <p>Payments and web security</p>
+                    <p>Product quality</p>
+                    <p>Track your order</p>
+                    <p>Returns & refunds</p>
+                    <p>FAQs</p>
+                    <p>Size Guide</p>
+                    <p>Return Policy</p>
+                </div>
+
+                <div id="b3">
+                    <i class="material-icons">email</i>
+                    <h2>YOOX NEWS</h2>
+                    <p>Sign up for the newsletter
+                        and discover the latest arrivals and promotions</p>
+                        <input class="insert_email" type="text" placeholder="INSERT YOUR EMAIL ADDRESS">
+                        <div id="select">
+                            <div class="women"><input class="f" type="radio" name="gender"><p>Women</p></div>    
+                            <div class="men"><input class="m" type="radio" name="gender"><p>Men</p></div>
+                        </div>
+                        <div id="checkbox">
+                            <input type="checkbox">
+                            <p>I consent to receive YOOX newsletters via email. For further information, please consult the Privacy Policy.</p>
+                        </div>
+                        <button id="btn1">SIGN UP</button>
+                </div>
+
+                <div id="b4">
+                    <h3>MYOOX</h3>
+                    <p>Login</p>
+                    <p>My Orders</p>
+                    <p>My Details</p>
+                    <p>Dream Box</p>
+                    <p>Première</p>
+                </div>
+
+                <div id="b5">
+                    <h3>ABOUT US</h3>
+                    <p>Company Info</p>
+                    <p>Press</p>
+                    <p>Affiliation</p>
+                    <p>Careers</p>
+                    <p>Contact us</p>
+                </div>
+            </div>
+
+            <div id="customer_care">
+                <h3>Can we help you?</h3>
+                <div id="area">GO TO THE CUSTOMER CARE AREA</div>
+                <p>Track your order</p> <hr>
+                <p>Complete the return form</p> <hr>
+                <p>Track your return</p> <hr>
+                <h3>CONTACT US</h3>
+                <p>Mon-Sun 7am-8pm UK Time</p>
+                <div id="icons">
+                    <div id="icon1"><i class="material-icons">contact_phone</i>
+                    <p>[ (0)8000868448 ]</p></div>
+                    <div id="icon2"><i class="material-icons">email</i>
+                        <p>[ E-MAIL ]</p></div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="footer_1">
+                <div id="footer_left">
+                    <p>FOLLOW US ON</p>
+                    <i href="https://www.facebook.com/yoox" class="fa-brands fa-facebook"></i>
+                    <i href="https://twitter.com/yoox" class="fa-brands fa-twitter"></i>
+                    <i href="https://www.instagram.com/yoox/" class="fa-brands fa-instagram"></i>
+                    <i href="https://www.youtube.com/yoox" class="fa-brands fa-youtube"></i>
+                    <i href="https://in.pinterest.com/yoox/_created/" class="fa-brands fa-pinterest"></i>
+                </div>
+
+                <div id="footer_right">
+                    <i class="fa-solid fa-tablet-screen"></i>
+                    <p>DOWNLOAD THE APP FOR iOS / ANDROID</p>
+                </div>
+            </div>
+
+            <div id="bottom_line">
+                <p>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE NO. 401/I/526</p>
+                <p>COOKIE POLICY / COOKIE CENTER / LEGAL AREA / PRIVACY POLICY</p>
+
+            </div>
+
+
+</body>
+</html>
+<script src="index.js"></script>
