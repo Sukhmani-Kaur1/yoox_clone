@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b72a7cd1bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>YOOX</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="head-desc">
+      SHOPPING BAG
+      <div class="linethru"></div>
+    </div>
+    <div id="container">
+      <!-- btns -->
+      <div class="action_btn">
+        <p class="back_btn"><a href="#">BACK TO SHOPPING</a></p>
+        <button class="checkout_btn">
+          PROCEED WITH YOUR ORDER <i class="fa fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <!-- line -->
+      <hr class="after_btn" />
+      <!-- bag cart div -->
+      <div id="bag_items">
+        <h2 id="head-expl">
+          ITEMS ADDED TO YOUR SHOPPING BAG <span id="count">(0)</span>
+        </h2>
+      </div>
+      <!-- line -->
+      <hr class="after_btn" />
+      <!-- promo code -->
+      <div id="promoCode">
+        <div class="content">
+          <h2>YOOXCODE</h2>
+          <div class="enterHere">
+            <input type="text" placeholder="ENTER YOUR CODE" id="promoQuery" />
+            <button id="promoApply">APPLY</button>
+          </div>
+          <span id="onWrong" class="showAlert">Invalide Code</span>
+          <span id="onCorrect" class="showAlert">Promo Code Applied</span>
+          <p class="pc-info">
+            You may need to log in for the YOOXCODE to work and it might not be
+            applicable to certain items
+          </p>
+        </div>
+      </div>
+      <!-- totals are here -->
+      <div id="total-items">
+        <div class="total_query">
+          <p>TOTAL FOR ITEMS</p>
+          <h5 id="totalForItems">US$ 0</h5>
+        </div>
+        <div class="total_query">
+          <p>Local Taxes and Duties</p>
+          <h5 id="taxes">US$ 0</h5>
+        </div>
+        <div class="total_query">
+          <p>SHIPPING</p>
+          <h5 id="shipping">US$ 0</h5>
+        </div>
+        <div class="total_query">
+          <p>PROMO</p>
+          <h5 id="promo">- 0</h5>
+        </div>
+        <div class="total_query">
+          <p>PAYMENT</p>
+          <h5>Free</h5>
+        </div>
+      </div>
+      <hr />
+      <div class="total_query">
+        <h2>ORDER TOTAL</h2>
+        <h2 id="order_total">US$ 0</h2>
+      </div>
+      <!-- line -->
+      <hr class="after_total" />
+      <!-- extras -->
+      <div>
+        <h6>SUMMARY OF THE MAIN TERMS AND CONDITIONS OF SALE</h6>
+        <div id="sum-box">
+          The products available on this website are directly sold by YOOX
+          NET-A-PORTER GROUP S.p.A. (“YOOX” or the “Vendor”), company subject to
+          the management and coordination of Compagnie Financière Richemont
+          S.A., with its registered office in Italy, Via Morimondo, 17 - 20143
+          Milano. For further information, please visit the Customer Care Area.
+          You will find information about purchases, shipping, refunds and
+          returning products purchased on the website. Remember that, even after
+          your purchase, you may contact YOOX at any time using the online
+          contact form or by telephone, when available, using the number
+          indicated in the Customer Care Area. You have the right to cancel the
+          contract entered into with the Vendor, without any penalty and without
+          specifying the reason, within thirty (30) days, starting from the day
+          of receipt of the products purchased on this website. In some specific
+          cases, duly indicated in the Return Policy section in the Legal Area,
+          and only if the service is available, it is possible to exchange the
+          chosen garment for another. To cancel the contract, you may use the
+          Return Form found in the Customer Care area, which should be completed
+          and submitted directly online via the website, or you can send to the
+          Vendor the form available on the Legal Area or any other written
+          notification explicitly indicating your decision to cancel the
+          contract. If you choose to use the Return Form to be submitted online
+          via the website, the Vendor will send an email confirming receipt of
+          your cancellation request. If you choose one of the other options, you
+          shall be responsible for proving that you exercised your right of
+          cancellation correctly and in a timely manner. The Right of
+          Cancellation is considered to be correctly exercised when the
+          following conditions are also fully satisfied: a. The Return Form
+          directly submitted online via the website or any other explicit
+          notification of your decision to cancel the contract must be correctly
+          completed and sent to the Vendor within thirty (30) days, starting
+          from the day of receipt of the products; b. the products should not
+          have been used, worn, washed; c. the identification tag should still
+          be attached to the products with the disposable seal, which forms an
+          integral part of the goods; d. the products should be returned in
+          their original packaging (in the case of audio CDs, books, design
+          objects, designer toys and adult games, the packaging’s original seal
+          must be intact; if you wish to return a kit, you must include all of
+          the items comprising it); e. the products must be entrusted to the
+          courier company within thirty (30) days, starting from the day of
+          receipt of the products; f. the products should not be damaged. The
+          only costs to be borne by you are those for returning the purchased
+          products, except if the Vendor expressly exempted you from such costs
+          at the time of the purchase and on the condition that you use the
+          courier service indicated by the Vendor in the Return Form. Without
+          prejudice to the application of the mandatory consumer protection
+          provisions, all products sold by the Vendor are covered by a
+          twenty-four (24) month guarantee for lack of conformity. You shall
+          inform the Vendor of the existence of any such lack of conformity
+          within a period of two (2) months from the day when you detected the
+          lack of conformity. Please contact our Customer Care. In case of lack
+          of conformity, you may choose between the repair or replacement of the
+          product. If these remedies are impossible or disproportionate you are
+          entitled to either require the Vendor to make an appropriate reduction
+          in the price or to terminate the contract. Please note that the
+          European Commission provides a platform for alternative extra-judicial
+          resolution of disputes, available on the website
+          http://ec.europa.eu/odr.
+        </div>
+      </div>
+
+      <div class="action_btn">
+        <p class="back_btn"><a href="#">BACK TO SHOPPING</a></p>
+        <button class="checkout_btn">
+          PROCEED WITH YOUR ORDER <i class="fa fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+
+
+      <div id="contactINFO">
+        <h5>CUSTOMER CARE</h5>
+        <p>If you have any questions you can send us an e-mail (Mon-Fri, 9am to 9pm Sydney Time)</p>
+      </div>
+    </div>
+    <div id="footer">
+      <p>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</p>
+      <h4><span>LEGAL AREA</span> PRIVACY POLICY</h4>
+    </div>
+  </body>
+</html>
+<script src="./script.js"></script>
