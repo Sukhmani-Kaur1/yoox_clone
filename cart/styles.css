@@ -55,6 +55,13 @@ body {
   width: 99%;
   margin: auto;
 }
+#bag_items > div {
+  margin-bottom: 10px;
+}
+#bag_items img {
+  width: 63px;
+  height: 80px;
+}
 #promoCode h2 {
   font-size: 16px;
   font-weight: 800;
@@ -206,7 +213,7 @@ select {
 }
 #footer {
   background-color: #333333;
-  height: 150px;
+  height: 110px;
   text-align: center;
   width: 100%;
   margin: auto;

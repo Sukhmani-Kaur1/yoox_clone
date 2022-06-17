@@ -6,7 +6,6 @@ let shipping = 26;
 let promo = 0;
 let order_total = 0;
 let count = 0;
-
 document.getElementById("taxes").textContent = `US$ ${taxes}`;
 document.getElementById("shipping").textContent = `US$ ${shipping}`;
 //add conditions for null data
