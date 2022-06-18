@@ -1,0 +1,498 @@
+function mensNavbar(){
+    return`
+    
+    <div class="dropdown">
+        <button class="dropbtn">NEW ARRIVALS</button>
+        <div id="first" class="dropdown-content">
+          <div id="zero">
+              <div id="one" >
+                  <div id="cloth">
+                  <div><a id="clothinga" href="mensclothing.html">Clothing</a></div>
+                  <div><a id="clothinga" href="shoes.html">Shoes</a></div>
+
+                  <div><a id="clothinga" href="accessories.html">ACCESSORIES & BAGS</a></div>
+                  <div>VIEW ALL</div>
+            </div> 
+            <hr/>
+            <div>
+                 <div> LATEST ARRIVALS</div>
+                 <div>THIS PAST WEE</div>
+                 <div>TOP DESIGNERS</div>
+                 <div>UNIQUE FINDS</div>
+            </div>
+          
+            </div>
+            <div id="two">
+              <div>
+                  <img src="https://www.yoox.com/images/items/12/12802961wt_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">                <div>
+                  <p>SEE BY CHLOÉ</p>
+                  <p>T-shirt</p>
+                  <p>US$ 354,00</p>
+                  <p>XS S M L</p>
+                </div>
+              </div>
+                    <div>
+                   <img src="https://www.yoox.com/images/items/46/46851471du_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">              <div>
+                    <p>SEE BY CHLOÉ</p>
+                    <p>T-shirt</p>
+                    <p>US$ 354,00</p>
+                    <p>XS S M L</p>
+                  </div>
+                </div>
+                
+                
+                <div>
+                      <img src="https://www.yoox.com/images/items/13/13787644se_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt=""/>                    <div>
+                      <p>VALENTINO</p>
+                      <p>   Denim pants</p>
+                      <p>  $ 2,029.00 43% OFF
+                    </p>
+                      <p>XS S M L</p>
+                    </div>
+                  </div>
+              
+                  
+                  
+                  <div>
+    <img src="https://www.yoox.com/images/items/45/45664620kq_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">                      <div>
+                        <p> <p>
+                        <p> NEIL BARRETT
+                        </p>
+                        <p>Handbag</p>
+                        <p>US$ 354,00</p>
+                        <p>$ 482.00 26% OFF</p>
+                      </div>
+                    </div>    
+                   
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    
+    
+      <div class="dropdown">
+        <button class="dropbtn">DESIGNERS</button>
+        <div id="designav" class="dropdown-content">
+         <div id="zero1">
+            <div id="desi1">
+                <div>
+                  <div id="desibo">DESIGNERS</div>
+                  <P> ALAÏA</P>
+                  <P>BALENCIAGA</P>
+                  <P>BOTTEGA VENETA</P>
+                  <P>BRUNELLO CUCINELLI</P>
+                  <P>BURBERRY</P>
+                  <P>CELINE
+                  </P>
+                  <P>CHLOÉ
+                  </P>
+                  <P>DIANE VON FURSTENBERG
+                  </P>
+                  <P>DOLCE & GABBANA
+                  </P>
+                  <P>DRIES VAN NOTEN
+                  </P>
+                  <P>DSQUARED2
+                  </P>
+                  <P>FENDI
+                  </P>
+                  <P>GUCCI
+                  </P>
+                  <P>ISABEL MARANT
+                  </P>
+                </div>
+                <div>
+                  <div id="desibo"></div>
+                  <p>JIL SANDER</p>
+                  <p>JW ANDERSON</p>
+                  <p>MAISON MARGIELA</p>
+                  <p>MARNI</p>
+                  <p>MISSONI</p>
+                  <p>MIU MIU</p>
+                  <p>OFF-WHITE™</p>
+                  <p>PRADA</p>
+                  <p>ROBERTO CAVALLI</p>
+                  <p>SAINT LAURENT</p>
+                  <p>STELLA MCCARTNEY</p>
+                  <p>VALENTINO</p>
+                  <p>VERSACE</p>
+                  <p>8 BY YOOX</p>
+                </div>
+           </div>
+            <div id="desi2">
+              <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/6825_4_SeeByChloe_W_Second.jpg?634485886601286852" alt="">
+                <p>SEE BY CHLOÉ </p>
+                <p>FALL IN LOVE WITH THE NEW COLLECTION!</p>
+              </div>
+    
+              <div>
+                <div>
+                  <img src="https://www.yoox.com/images/yoox80/banners/6825_4_BottegaVeneta_W_Small.jpg?634485886601286852" alt="">
+                  <p>BOTTEGA VENETA</p>
+                  <p>UNIQUE AND</p>
+                  <p>UNMISTAKABLE STYLE</p>
+                </div>
+                <div>
+                   <img src="https://www.yoox.com/images/yoox80/banners/6824_2_OffWhite_W_Small.jpg?634485886601286852" alt="">
+                  <p>OFF-WHITE™
+                  </p>
+                  <p>THAT'S SO COOL!
+                  </p>
+    
+                </div>
+          </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn">Clothing</button>
+        <div  class="dropdown-content">
+        <a  id="clothinga" href="mensclothing.html"> <div id="zero3">
+          <div>
+              <p>CATEGORIES</p>
+              <p>DRESSES</p>
+              <p>T-SHIRTS AND TOPS</p>
+              <p>SHIRTS</p>
+              <p>SWEATERS AND SWEATSHIRTS</p>
+              <p>JEANS AND DENIM</p>
+              <p>SKIRTS</p>
+              <p>PANTS</p>
+              <p>JUMPSUITS AND OVERALLS</p>
+              <p>SWIMWEAR</p>
+              <p>ACTIVEWEAR</p>
+              <p>VIEW ALL</p>
+          </div>
+    
+          <div>
+            <p>DESIGNERS</p>
+            <p>BALENCIAGA</p>
+            <p>DOLCE & GABBANA</p>
+            <p>GUCCI</p>
+            <p>LANVIN</p>
+            <p>MAISON MARGIELA</p>
+            <p>MARNI</p>
+            <p>PRADA</p>
+            <p>RICK OWENS</p>
+            <p>VALENTINO</p>
+            <p>VERSACE</p>
+            <p>VIEW ALL DESIGNERS</p>
+          </div>
+    
+    
+    
+          <div>
+    
+            <p>INSPIRATION</p>
+            <p>THE NEW STYLE GALLERY</p>
+            <p>ENDLESS SUMMER</p>
+            <p>GUCCI</p>
+            <p>WONDERFUL WEDDINGS</p>
+            <p>MAISON MARGIELA</p>
+            <p>READY. SET. MATCH!</p>
+            <p>AL FRESCO
+            </p>
+            <p>RICK OWENS</p>
+            <p>WHAT TO WEAR WITH SNEAKERS</p>
+            <p>YOOXYGEN SUSTAINABLEWEAR</p>
+            <p>VIEW ALL DESIGNERS</p>
+    
+    
+    
+          </div>
+    
+    
+    
+          <div>
+            <img src="https://www.yoox.com/images/yoox80/banners/6824_1_VibrantVacations_W_Dropdown.jpg?634485886601286852" alt="">
+         <p>
+          OUT OF OFFICE    </p>
+         <p> VIBRANT VACATION STYLE</p>
+          </div>
+      
+        </div>
+        </a> 
+         
+        </div>
+      </div>
+    
+
+      <div class="dropdown">
+        <button class="dropbtn">SHOES</button>
+        <div class="dropdown-content">
+         <a  id="clothinga" href="shoes.html"> <div id="zero3" id="zero4">
+            <div>
+                <p>SNEAKERS</p>
+                <p>PUMPS</p>
+                <p>SANDALS</p>
+                <p>ESPADRILLES</p>
+                <p>MULES AND CLOGS</p>
+                <p>ANKLE BOOTS</p>
+                <p>BALLET FLATS</p>
+                <p>LOAFERS</p>
+                <p>BOOTS</p>
+                <p>SWIMWEAR</p>
+                <p>ACTIVEWEAR</p>
+                <p> NEW ARRIVALS VIEW ALL</p>
+            </div>
+     
+      
+            <div>
+              <p>DESIGNERS</p>
+              <p>BALENCIAGA</p>
+              <p>DOLCE & GABBANA</p>
+              <p>GUCCI</p>
+              <p>LANVIN</p>
+              <p>MAISON MARGIELA</p>
+              <p>MARNI</p>
+              <p>PRADA</p>
+              <p>RICK OWENS</p>
+              <p>VALENTINO</p>
+              <p>VERSACE</p>
+              <p>VIEW ALL DESIGNERS</p>
+            </div>
+    
+    
+      
+      
+            <div>
+      
+              <p>INSPIRATION</p>
+              <p>THE SNEAKER CORNER</p>
+              <p>EVERYDAY MULES</p>
+              <p>PLATFORMS</p>
+              <p>STRAPPY SANDALS</p>
+              <p>WONDERFUL WEDDINGS</p>
+           
+              <p>GOOD VIBES ONLY</p>
+              <p>VIEW ALL DESIGNERS</p>
+            </div>
+      
+      
+      
+     <div >
+    <img   src="https://www.yoox.com/images/yoox80/banners/6824_1_SummerShop_DD_SHOES_W.jpg?634485886601286852" alt="">   
+        <p>
+      SKY AND SAND
+      </p>
+           <p>  DAYS AT THE BEACH AND NIGHTS WITH YOUR FRIENDS</p>
+            </div>
+        
+          </div>
+        </a>
+           
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn"> ACCESSORIES & BAGS</button>
+        <div class="dropdown-content">
+      
+         <a id="clothinga" href="accessories.html"> <div id="accesoriesnav">
+            <div>
+                <p>HANDBAGS</p>
+                <p>BACKPACKS & FANNY PACKS</p>
+                <p>EYEWEAR</p>
+                <p>JEWELRY</p>
+                <p>WATCHES</p>
+                <p>HATS</p>
+                <p>LUGGAGE
+                </p>
+                <p>SCARVES AND FOULARDS</p>
+
+                <p> NEW ARRIVALS VIEW ALL</p>
+            </div>
+            <div>
+              <p>DESIGNERS</p>
+              <p>BALENCIAGA</p>
+              <p>DOLCE & GABBANA</p>
+              <p>GUCCI</p>
+              <p>LANVIN</p>
+              <p>MAISON MARGIELA</p>
+              <p>MARNI</p>
+              <p>PRADA</p>
+              <p>RICK OWENS</p>
+              <p>VALENTINO</p>
+              <p>VERSACE</p>
+              <p>VIEW ALL DESIGNERS</p>
+            </div>
+            <div>
+              <p>INSPIRATION</p>
+              <p>A COOL TOUCH</p>
+              <p>WONDERFUL WEDDINGS</p>
+              <p>HI GUYZ</p>
+              <p>EXCELLENT EXTRAS</p>
+           
+              <p>GOOD VIBES ONLY</p>
+              <p>EXCELLENT EXTRAS</p>
+            </div>
+    
+      
+      
+      
+     <div >
+    <img src="https://www.yoox.com/images/yoox80/banners/6824_1_FocusOnSummerAccessories_W_DD.jpg?634485886601286852" alt="">   
+     <p>BEAT THE HEAT</p>
+      <p>STAY COOL WITH THESE ACCESSORIES</p>
+       </div>
+          </div>
+        </a>
+
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn">8 BY YOOX </button>
+        <div class="dropdown-content">
+          <div id="byoox">
+            <div>
+              <p>CATEGORIES</p>
+              <p><a id="clothinga" href="mensclothing.html">Clothing</a></p>
+              <p><a id="clothinga" href="shoes.html">Shoes</a></p>
+              <p><a id="clothinga" href="accessories.html">ACCESSORIES & BAGS</a>
+              </p>
+              <p>VIEW ALL
+              </p>
+              <p>NEW ARRIVALS
+              </p>
+            </div>
+            <div>
+              <img src="https://www.yoox.com/images/yoox80/banners/6833_4_8byoox_Dropdown.jpg?634485886601286852" alt="">
+              <p>          WHERE PEOPLE DANCE
+              </p>
+              <p>THE NEW SS22 COLLECTION FROM 8 BY YO
+              </p>
+    
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/6833_2_8byoox_Game_Dropdown.jpg?634485886601286852" alt="">
+                <p>GAME ON!</p>
+                <p>PLAY THE 8 BY YOOX VIDEO GAME</p>
+            </div>
+      
+          </div>
+         
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn">YOOXYGEN</button>
+        <div class="dropdown-content">
+          <div id="yooxygen">
+            <div>
+              <p>YOOXYGEN IS THE DESTINATION DEDICATED TO SUSTAINABLE FASHION. DRIVE CHANGE THROUGH OUR EDIT OF BRANDS AND PRODUCTS THAT DEMONSTRATE A POSITIVE SOCIAL AND ENVIRONMENTAL IMPACT.</p>
+              <p>ENVIRONMENTAL IMPACT.</p>
+              <p>CLOTHING</p>
+              <p>SHOES</p>
+              <p>ACCESSORIES & BAGS</p>
+              <p>ALIGHIERI X YOOX</p>
+              <p>RETHINK WITH ❤</p>
+              <p>LEVI'S®</p>
+              <p>VEJA</p>
+              <p>THE BRAND</p>
+            </div>
+            <div>
+              <img src="https://www.yoox.com/images/yoox80/banners/5460_1_TalesOfAfrica_DD.jpg?634485886601286852" alt="">
+              <p>          TALES OF AFRICA</p>
+              <p>TRADITIONAL CRAFTSMANSHIP
+              </p>
+              <p>AND CONTEMPORARY DESIGN</p>
+            </div>
+            <div id="byooxone">
+              <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/5460_1_Yooxygen_W_Small.png?634485886601286852" alt="">
+                <p>YOOXYGEN
+                  DISCOVER ALL THE </p>
+                  <p>PLANET-POSITIVE BRANDS</p>
+              </div>
+    
+              <div>
+             <img src="https://www.yoox.com/images/yoox80/banners/6825_1_KarlxAmberlValletta_DDSmall_W.jpg?634485886601286852" alt="">    
+             <p>KARL LAGERFELD X AMBER VALLETTA
+              </p>
+              <p>TIMELESS ELEGANCE AND DESIGN</p>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn">  COLLABORATIONS</button>
+        <div class="dropdown-content">
+      
+          <div id="collabre">
+            <div>
+              <p>EXCLUSIVE COLLABORATIONS, LIMITED EDITIONS AND NEW FASHION AND SPORTSWEAR COLLECTIONS: DISCOVER THEM NOW!</p>
+              <p>FURLA</p>
+              <p>MONTBLANC</p>
+              <p>VIEW ALL
+              </p>
+              <p>NEW ARRIVALS
+              </p>
+            </div>
+          
+            
+    
+            <div>
+    <img src="https://www.yoox.com/images/yoox80/banners/6825_4_SeeByChloe_W_Second.jpg?634485886601286852" alt="">    
+          <p>       SEE BY CHLOÉ SS 2022
+              </p>
+              <p> FALL IN LOVE WITH THE NEW COLLECTION
+              </p>
+            </div>
+            <div>
+    <img src="https://www.yoox.com/images/yoox80/banners/6825_1_BaumeMercier_DD.jpg?634485886601286852" alt="">          
+      <p>  BAUME & MERCIER</p>
+              <p>  DON’T MISS OUR SELECTION OF WATCHES
+              </p>
+        </div>
+      
+          </div>
+         
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn">  BEST OFFER</button>
+        <div class="dropdown-content">
+      
+          <div id="collabre">
+            <div>
+              <p>CLOTHING</p>
+              <p>SHOES</p>
+              <p>ACCESSORIES & BAGS</p>
+           
+              <p>VIEW ALL
+              </p>
+              <p>NEW ARRIVALS
+              </p>
+            </div>
+    
+            <div>
+    <img src="https://www.yoox.com/images/yoox80/banners/6655_1_01_newreduction_eng.jpg?634485886601286852" alt="">    
+      <p>    STELLA MCCARTNEY AND
+    
+              </p>
+              <p>DISCOVER THE LATEST ITEMS
+              </p>
+    
+            </div>
+           <div>
+    <img src="https://www.yoox.com/images/yoox80/banners/6655_1_SeasonalMustHave_DDBig_ENG.jpg?634485886601286852" alt=""> 
+     <p>   STELLA MCCARTNEY AND</p>
+              <p>  CREATE THE PERFECT LOOK </p>  
+            </div>
+      
+          </div>
+         
+        </div>
+        `
+   
+
+}
+export {mensNavbar}
