@@ -1,0 +1,97 @@
+body{
+    font-family: 'Montserrat', sans-serif;;
+}
+#xmainy{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    width: 64%;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+#topimgs{
+    margin: auto;
+    /* border: 1px solid; */
+    width: 70%;
+}
+#sidebardiv{
+    /* border: 1px solid; */
+    height: 600px;
+    width: 25%;
+}
+#dressdiv{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    /* border: 1px solid blue; */
+    width: 73%;
+    text-align: center;
+    line-height:1px;
+    /* padding : 1%; */
+}
+#price{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid; */
+    width: 60%;
+    margin: auto;
+    margin-top: -8% ;
+}
+.para{
+    text-decoration: line-through;
+    color: gray;
+
+}
+#symbol{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    padding: 3%;
+    border-bottom: 1px solid silver;
+  
+   
+}
+.p2{
+    margin-top: -1%;
+}
+.symbol1{
+    width: 8%;
+    height: 20px;
+    /* margin-left: -40px; */
+    
+}
+.symbol2{
+    width: 50%;
+    height: 20px;
+}
+ul{
+    list-style-type: none;
+}
+#expand{
+    /* border: 1px solid gray; */
+    margin-bottom: 5px;
+    background-color: rgb(226, 223, 223);
+}
+#dress1{
+    margin:2% 0 0 33% ;
+}
+#dress2{
+    margin:2% 0 0 38% ;
+}
+#dressx5{
+    margin:2% 0 0 41% ;
+}
+#dressx1{
+    margin:2% 0 0 27% ;
+}
+
+#dressx2,#dressx4{
+    margin:2% 0 0 63% ;
+}
+#dressx3{
+    margin:2% 0 0 52%
+}
+#dressx6{
+    margin:2% 0 0 4%
+}
