@@ -1,4 +1,4 @@
-let getData = JSON.parse(localStorage.getItem("favData"));
+let getData = JSON.parse(localStorage.getItem("dreamData"));
 
 let arr = JSON.parse(localStorage.getItem("Data")) || [];
 let container = document.getElementById("bag-items");
@@ -11,12 +11,12 @@ function append(data) {
     let img = document.createElement("img");
     img.src = el.img;
     let title = document.createElement("h4");
-    title.textContent = el.title;
+    title.textContent = el.name;
     let remove = document.createElement("button");
     remove.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
     remove.addEventListener("click", function () {
       data.splice(i, 1);
-      localStorage.setItem("favData", JSON.stringify(data));
+      localStorage.setItem("dreamData", JSON.stringify(data));
       window.location.reload();
     });
     let addCart = document.createElement("a");
@@ -25,7 +25,7 @@ function append(data) {
     addCart.addEventListener("click", function () {
       if (!arr.includes(el)) {
         arr.push(el);
-        localStorage.setItem("Data", JSON.stringify(arr));
+        localStorage.setItem("cartData", JSON.stringify(arr));
       } else {
         alert("already in the cart");
       }
