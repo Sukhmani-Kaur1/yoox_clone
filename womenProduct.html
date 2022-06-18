@@ -23,10 +23,10 @@
         var image = document.createElement("img");
         image.src = el.image;
 
-        var h3 = document.createElement("h5");
+        var h3 = document.createElement("h2");
         h3.textContent = el.name;
 
-        var h1 = document.createElement("p");
+        var h1 = document.createElement("h4");
         h1.textContent = el.type;
 
         var p1 = document.createElement("p")
@@ -60,6 +60,10 @@
        })
        var btn = document.createElement("button")
        btn.textContent="ADD TO SHOPPING BAG";
+       btn.addEventListener("click",function(){
+        //    localStorage.setItem("addcart",JSON.stringify(el))
+        })
+
 
        var btn1 =  document.createElement("button")
        btn1.textContent="ADD TO DREAM BOX";
@@ -81,11 +85,16 @@
         var div4=document.createElement("div")
         div4.setAttribute("id", "symbol")
 
-        div3.append(p1, disc)
-        div2.append(h3, h1, div3,p2)
-        div4.append(eyeoff,fav,p3)
-        card.append(image,div4,div2,p5,btn,btn1);
+        // div3.append(p1, disc)
+        // div2.append(h3, h1, div3,p2)
+        // div4.append(eyeoff,fav,p3)
+        // card.append(image,div4,div2,p5,btn,btn1);
 
+        div2.append(btn, btn1)
+        div3.append(image)
+        div4.append(h3, h1, p2, p5, div2)
+
+        card.append(div3, div4)
      
 
         document.querySelector("#dressdiv").append(card)

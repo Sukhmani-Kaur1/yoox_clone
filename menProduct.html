@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,89 +8,98 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/menProduct.css">
 </head>
+
 <body>
     <div id="dressdiv"></div>
 </body>
+
 </html>
 <script>
     var data = JSON.parse(localStorage.getItem("zoomin"));
     console.log(data)
     function display(el) {
 
-    // data.map(function (el) {
+        // data.map(function (el) {
         var card = document.createElement("div");
         card.setAttribute("id", "card")
 
         var image = document.createElement("img");
         image.src = el.image;
 
-        var h3 = document.createElement("h5");
+        var h3 = document.createElement("h2");
         h3.textContent = el.name;
 
-        var h1 = document.createElement("p");
+        var h1 = document.createElement("h4");
         h1.textContent = el.type;
 
         var p1 = document.createElement("p")
-        p1.textContent =`$${ el.price}`;
+        p1.textContent = `$${el.price}`;
         p1.setAttribute("class", "para")
 
         var p2 = document.createElement("p")
         p2.textContent = `$${el.strikedoffprice}`;
-        p2.setAttribute("class","p2")
+        p2.setAttribute("class", "p2")
 
         var p3 = document.createElement("img")
-        p3.src="https://www.yoox.com/media/yoox14/sections/sr/badge/badge_new_2018n.png"
-        p3.setAttribute("class","symbol2")
+        p3.src = "https://www.yoox.com/media/yoox14/sections/sr/badge/badge_new_2018n.png"
+        p3.setAttribute("class", "symbol2")
 
         var p4 = document.createElement("p")
-        p4.textContent=el.type
+        p4.textContent = el.type
 
         var p5 = document.createElement("p")
-        p5.textContent=el.size;
+        p5.textContent = el.size;
 
         var eyeoff = document.createElement("img")
-        eyeoff.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbySFNtQbxNnSnMs4bSoA8pL_pL5R75XdqGA&usqp=CAU"
-        eyeoff.setAttribute("class","symbol1")
+        eyeoff.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbySFNtQbxNnSnMs4bSoA8pL_pL5R75XdqGA&usqp=CAU"
+        eyeoff.setAttribute("class", "symbol1")
 
-        var fav=document.createElement("img")
-        fav.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQobfSOCPduYpVTa2kAHaLWapi651J_Sp6yTQ&usqp=CAU"
-       fav.setAttribute("class","symbol1")
-       fav.addEventListener("click",function(){
-        alert("Product is added to favourite")
-        window.location.href="fav.html";
-       })
-       var btn = document.createElement("button")
-       btn.textContent="ADD TO SHOPPING BAG";
+        var fav = document.createElement("img")
+        fav.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQobfSOCPduYpVTa2kAHaLWapi651J_Sp6yTQ&usqp=CAU"
+        fav.setAttribute("class", "symbol1")
+        fav.addEventListener("click", function () {
+            alert("Product is added to favourite")
+            window.location.href = "fav.html";
+        })
+        var btn = document.createElement("button")
+        btn.textContent = "ADD TO SHOPPING BAG";
+        btn.addEventListener("click",function(){
+            //    localStorage.setItem("addcart",JSON.stringify(el))
+        })
 
-       var btn1 =  document.createElement("button")
-       btn1.textContent="ADD TO DREAM BOX";
-      
-        
+        var btn1 = document.createElement("button")
+        btn1.textContent = "ADD TO DREAM BOX";
+
+
 
         var div2 = document.createElement("div")
-        div2.setAttribute("class","box2")
+        div2.setAttribute("class", "box2")
 
         var disc = document.createElement("p");
-        disc.textContent=` ${Math.round((el.price-el.strikedoffprice)/el.price*100)}% Off`
-        disc.setAttribute("class","disc")
+        disc.textContent = ` ${Math.round((el.price - el.strikedoffprice) / el.price * 100)}% Off`
+        disc.setAttribute("class", "disc")
 
 
 
         var div3 = document.createElement("div");
         div3.setAttribute("id", "price")
 
-        var div4=document.createElement("div")
+        var div4 = document.createElement("div")
         div4.setAttribute("id", "symbol")
 
-        div3.append(p1, disc)
-        div2.append(h3, h1, div3,p2)
-        div4.append(eyeoff,fav,p3)
-        card.append(image,div4,div2,p5,btn,btn1);
+        // div3.append(p1, disc)
+        // div2.append(h3, h1, div3,p2)
+        // div4.append(eyeoff,fav)
+        // card.append(image,div4,div2,p5,btn,btn1);
+        div2.append(btn, btn1)
+        div3.append(image)
+        div4.append(h3, h1, p2, p5, div2)
 
-     
+        card.append(div3, div4)
+
 
         document.querySelector("#dressdiv").append(card)
-    // })
-}
-display(data);
+        // })
+    }
+    display(data);
 </script>
