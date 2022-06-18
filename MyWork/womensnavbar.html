@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens Navbar</title>
+    <link rel="stylesheet" href="./styles/mynavbar.css">
+    
+  <link rel="stylesheet" href="../styles/mynavbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        
+
+#WomensNavbar{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+    </style>
+</head>
+
+<body>
+<div id="WomensNavbar"></div>
+    
+</body>
+</html>
+<script type="module">
+    
+    import {mynavbar} from "./mynavbarComponents/mynavbar.js"
+    document.getElementById("WomensNavbar").innerHTML = mynavbar();
+    console.log(mynavbar())
+
+</script>
