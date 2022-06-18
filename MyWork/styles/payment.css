@@ -1,0 +1,129 @@
+*{
+    font-family: 'Montserrat', sans-serif;}
+
+#paymentDiv{
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#bodyhole{
+    width: 100%;
+   background-color:#f3f3f3;
+   margin: auto;
+}
+
+#firstonediv{
+    width: 100%;
+
+}
+
+#firstonedivone{
+height: 150px;
+display: flex;
+flex-direction: column;
+justify-content:space-evenly ;
+padding-left: 10px;
+
+background-color: white;
+
+}
+
+#cheackoutEamil{
+font-weight: 900;
+font-size: 18px;
+}
+#localstoreageEamil{
+font-weight: bolder;
+font-size: 14px;
+}
+
+#cheackoutEamilinside{
+font-size: 14px;
+}
+
+#firstonedivtwo{
+margin-top: 40px;
+padding-left: 10px ;
+padding-bottom: 10px;
+padding-top: 10px;
+background-color: white;
+
+font-size: 13px;
+}
+
+
+#firstonedivtwo>p{
+margin-top: 10px;
+}
+
+#firstonedivthree{
+margin-top:40px;
+padding-left: 10px;
+font-size:13px;
+background-color: white;
+
+}
+#firstonedivthree>input{
+width: 250px;
+height: 30px;
+}
+#inputSize>input{
+
+width: 250px;
+height: 30px;
+margin-top: 10px;
+margin-right: 15px;
+}
+
+#proceedLastpara{
+font-size: 10px;
+
+}
+#proceedLast{
+margin-left: 80%;
+width: 200px;
+height: 35px;
+background-color: black;
+color: white;
+font-weight: 600;   
+margin-top: 10px;
+
+
+}
+#lastinputmarign{
+margin-top: 10px;
+}
+
+#frequentyAsked{
+width: 100%;
+background-color: white;
+margin-bottom: 50px;
+margin-top: 50px;
+
+}
+#frequentyAsked>div{
+margin-left: 7%;
+
+}
+#frequentyAsked>div>p:first-child{
+
+font-weight: 600;
+font-size: 18px;
+}
+
+#lastblacked{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid black;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: black;
+color: white;
+
+}
