@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+<body>
+    
+    <form>
+        
+        <h2 id="top"><b>It's great to see you again.</b></h2>
+        <p id="login">Login with</p>
+        <input id="f" type="Login with Facebook" onclick="location.href = 'https:/www.facebook.com'" value=" f    Login with Facebook">
+        <input id="G" type="G    Sign in with Google" onclick="location.href = 'https:/www.google.com/'" value="G    Sign in with Google">
+     
+        <p id="Or">or with your e-mail address</p>
+
+     
+        <input class="box" id="email" placeholder="EMAIL" type="text">
+        <input class="box" id="password" placeholder="PASSWORD" type="password" >
+        
+        <!-- <input id="submit" type="LOG IN" onclick="location.href = 'signup.html'" value="LOG IN"> -->
+        <input id="submit" type="submit" value="LOG IN">
+        <p id="signin">ARE YOU NEW TO YOOX? <a href="signup.html"> REGISTER NOW</a></p>
+    </form>
+    
+</body>
+<script>
+    var form=document.querySelector("form");
+    var userData=JSON.parse(localStorage.getItem("userData")); // null
+
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+        var data={
+            email: form.email.value,
+            password: form.password.value
+
+        }
+
+        if(userData === null){
+            alert("Please Create an account");
+        }else if(userData.email==data.email && userData.password == data.password){
+            alert("Sign In Successful");
+            localStorage.setItem("signin",JSON.stringify(userData));
+            window.location.href="signup.html"
+        }else{
+            alert("User Does not exist")
+        }
+    })
+    
+    
+</script>
+</html>
