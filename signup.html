@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <div>
+        <p id="name">MYOOX</p>
+        <p id="reg">REGISTRATION</p>
+        <P id="p">Take advantage of a faster checkout and enjoy promotions for registered customers only</P>
+        <p id="benefits">Discover all the benefits</p>
+
+    </div>
+    
+    <form >
+        
+        <h2 id="REG">REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</h2>
+        <input id="f" type="Login with Facebook" onclick="location.href = 'https:/www.facebook.com'" value=" f    Login with Facebook">
+        <input id="G" type="G    Sign in with Google" onclick="location.href = 'https:/www.google.com/'" value="G    Sign in with Google">
+        <br>
+        <p id="or">OR WITH YOUR EMAIL</p>
+        <input class="box" id="firstname" placeholder="FIRST NAME" type="text">
+        <input class="box" id="lastname" placeholder="LAST NAME" type="text">
+        <input class="box" id="email" placeholder="EMAIL" type="text">
+        <input class="box" id="password" placeholder="PASSWORD" type="password" >
+        <div id="Personalize">Personalize your shopping experience.</div>
+        <select id="gender">
+            <option id="M" value="M">Male</option>
+            <option id="F" value="F">Female</option>
+        </select>
+        <p id="dob">If you are over 18 years old, celebrate your birthday with us: We have a surprise for you.</p>
+        <input id="DOB" placeholder="DATE OF BIRTH" type="text">
+        <p id="dec">I declare that I have read and accept the MYOOX Terms and Conditions of Use</p>
+        <p id="dec">I agree to the use of my personal data in order to be updated on new arrivals, informed about exclusive items and contacted as part of targeted marketing initiatives related to services offered by YOOX.<br />By analyzing my personal data, order history and browsing habits, YOOX can improve my shopping experience with suggestions that correspond to my interests.</p>
+        <input id="submit" type="submit" onclick="location.href = 'signin.html'" value="submit">
+        <!-- <input id="submit" type="Register" value="Register"> -->
+        <p id="signin">Already have an account?<a href="signin.html">Sign In</a></p>
+    </form>
+    
+</body>
+
+<script>
+    
+    var form = document.querySelector("form");
+
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+
+        var data={
+            firstname:form.firstname.value,
+            lastname:form.lastname.value,
+            email: form.email.value,
+            password: form.password.value,
+        }
+        
+        localStorage.setItem("userData",JSON.stringify(data));
+        
+    })
+
+    
+
+
+
+    
+</script>
+</html>

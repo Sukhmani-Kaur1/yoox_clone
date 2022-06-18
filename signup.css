@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+form{
+    width:50%;
+    margin: auto;
+
+}
+h2{
+    font-weight: 700;
+    display: flex;
+    font-family: Poppins, sans-serif;
+    font: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#submit{
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    display:flex;
+    margin-bottom: 30px;
+    margin-top: 20px;;
+
+}
+#signin{
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+img{
+    display:block;
+    justify-content: center;
+    margin-left:580px;
+    margin-bottom: -20px;
+    
+    
+}
+p{
+    font-family: Poppins, sans-serif;
+    margin-bottom: auto;
+
+}
+#agreement{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    font:12px;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 10px;
+
+}
+
+
+input{
+    display:block;
+    margin:auto;
+    font-size: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(248, 246, 246);
+  }
+  /* Navbar related css */
+  
+  #links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+    box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
+    
+  }
+  
+  #links > div {
+    display: flex;
+    list-style: none;
+  }
+  #links a {
+    text-decoration: none;
+    color: teal;
+    font-size: 30px;
+  }
+  #submit {
+    width: 30%;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 46px;
+    text-align: center;
+    cursor: default;
+    /* border-radius: 15px; */
+  }
+  #G{
+    width: 30%;
+    margin: auto;
+    background-color: rgb(179, 31, 31);
+    color: white;
+    border: none;
+    /* border-radius: 15px; */
+    height: 46px;
+    text-align: center;
+  }
+#f{
+    width: 30%;
+    margin: auto;
+    background-color: rgb(49, 49, 148);
+    color: white;
+    border: none;
+    /* border-radius: 15px; */
+    margin-bottom: 10px;
+    /* display: table-cell; */
+    height: 46px;
+    text-align: center;
+  }
+  /* Navbar related css */
+  
+  /* Form related css */
+  
+  input,
+  select {
+    display: block;
+    margin: 15px 0px;
+    font-size: 20px;
+    padding: 2%;
+  }
+  option {
+    font-size: 25px;
+  }
+  form {
+    width: auto;
+    border: 1px solid rgb(230, 230, 230);
+    margin: 3% auto;
+    padding: 3%;
+    background: white;
+  }
+
+  #name{
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+  }
+
+  #reg{
+    display: block;
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#p{
+    font-family: SourceSansPro,sans-serif;
+    display: block;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#benefits{
+    font-family: SourceSansProBold,sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#REG{
+    text-align: center;
+    display: block;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+#or{
+    text-align: center;
+    display: block;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.box{
+    width: 30%;
+    margin: auto;
+    display: block;
+    height: 40px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    background-color: #f6f6f6;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: text;
+    border-bottom: 2px solid #f6f6f6;
+}
+
+#Personalize{
+    font-family: SourceSansPro,sans-serif;
+    font-weight: 500;
+    cursor: default;
+    /* font-size: .75rem; */
+    margin: auto;
+    text-align: center;
+    display: block;
+
+}
+
+#gender{
+    display: block;
+    margin: auto;
+    width:30%;
+    /* font-size: 15px; */
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 5px;
+    /* background-color: #f6f6f6; */
+    /* onfocus= 'this.size=10;' */
+    /* height:"this.size=5;" */
+
+
+}
+
+#dob{
+    font-size: 12px;
+    font-family: SourceSansPro,sans-serif;
+    cursor: default;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    display: block;
+    width:30%;
+    /* background-color: #f6f6f6;
+    height: 30px;
+    cursor: text;
+    display: block!important;
+    font-size: 14px; */
+}
+
+#DOB{
+    width: 30%;
+    margin: auto;
+    display: block;
+    height: 40px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    background-color: #f6f6f6;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: text;
+    border-bottom: 2px solid #f6f6f6;
+
+}
+
+#dec{
+    font-size: 12px;
+    font-style: normal;
+    font-family: SourceSansProItalic,sans-serif;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    background-color: #f6f6f6;
+    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+    width:30%;
+
+}
+
+#top{
+    text-align: center;
+    display: block;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color:  #b3b126;
+    text-decoration-thickness: large;
+    /* background-color: yellow; */
+}
+
+#login{
+    text-align: center;
+    display: block;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+}
+
+#Or{
+    text-align: center;
+    display: block;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+
+/* #F,#M{
+    font-size: 15px;
+}
+   */
