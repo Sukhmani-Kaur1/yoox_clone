@@ -1,5 +1,5 @@
 let container = document.getElementById("bag_items");
-let getData = JSON.parse(localStorage.getItem("Data")) || [];
+let getData = JSON.parse(localStorage.getItem("cartData")) || [];
 let total = 0;
 let taxes = 73;
 let shipping = 26;
@@ -32,7 +32,7 @@ function append(data) {
     img.src = el.img;
     let set2 = document.createElement("div");
     let title = document.createElement("h4");
-    title.textContent = el.title;
+    title.textContent = el.name;
     set2.append(img, title);
     set2.className = "set2box";
     let size = document.createElement("p");
@@ -50,17 +50,17 @@ function append(data) {
       itemVal = quantity.value;
       el.quan = itemVal;
       calculate(data);
-      localStorage.setItem("Data", JSON.stringify(data));
+      localStorage.setItem("cartData", JSON.stringify(data));
     });
     let remove = document.createElement("button");
     remove.innerHTML = `<i class="fa-solid fa-xmark"></i>${"REMOVE"}`;
     remove.addEventListener("click", function () {
       data.splice(i, 1);
-      localStorage.setItem("Data", JSON.stringify(data));
+      localStorage.setItem("cartData", JSON.stringify(data));
       window.location.reload();
     });
     let prize = document.createElement("h4");
-    prize.innerText = `US$ ${el.prize}`;
+    prize.innerText = `US$ ${el.price}`;
     div.append(set2, size, quantity, prize, remove);
     container.append(div);
     document.getElementById("count").textContent = `(${count})`;
@@ -71,7 +71,10 @@ let quantity = document.querySelector("select");
 for (let i of getData) {
   itemVal = quantity.value;
   i.quan = itemVal;
-  total += Number(i.prize) * Number(i.quan);
+  let price = i.price.replace("$", " ");
+  price = price.trim();
+  total += Number(price) * Number(i.quan);
+  // console.log(Number(price))
   document.getElementById("totalForItems").textContent = `US$ ${total}`;
   order_total = total + shipping + taxes;
   document.getElementById("order_total").textContent = `US$ ${order_total}`;
@@ -83,7 +86,9 @@ function calculate(data) {
   for (let i of data) {
     let num = Number(i.quan);
     sum += num;
-    total += Number(i.prize) * Number(i.quan);
+    let price = i.price.replace("$", " ");
+    price = price.trim();
+    total += Number(price) * Number(i.quan);
     order_total = total + shipping + taxes;
   }
   // console.log(order_total)
