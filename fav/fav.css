@@ -1,0 +1,76 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  /* background-color: #fbfbfb; */
+}
+#head-desc {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.linethru {
+  width: 150px;
+  margin: auto;
+  height: 7px;
+  background-color: #fefe94;
+  margin-top: -13px;
+}
+.align_intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.align_intro > p {
+  letter-spacing: -1px;
+  font-size: 14px;
+  margin-bottom: -2px;
+  font-weight: 500;
+}
+#container {
+  width: 70%;
+  margin: auto;
+}
+hr {
+  background-color: rgb(124, 124, 124);
+}
+#select {
+  border: none;
+}
+#bag-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#bag-items > div > button {
+  text-align: center;
+  position: relative;
+  border: none;
+  background-color: transparent;
+   left: 120px;
+   top: -345px; 
+    /*left: 73px; */
+}
+#bag-items button .fa-xmark {
+  font-size: 25px;
+  color: gray;
+}
+#bag-items > div {
+  /* width: 100%; */
+  text-align: center;
+  /* border: 1px solid; */
+}
+#bag-items > div img{
+    width: 100%;
+
+}
+#bag-items > div a{
+    background-color: #f3f3f3;
+    padding: 10px 58px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.fa-xmark-large {
+  color: black;
+}
