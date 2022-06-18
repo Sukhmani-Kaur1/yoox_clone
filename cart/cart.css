@@ -1,10 +1,12 @@
 body {
   font-family: "Montserrat", sans-serif;
+  /* background-color: #fbfbfb; */
 }
 
 #container {
   width: 70%;
   margin: auto;
+  /* background-color: white; */
   /* display: none; */
 }
 
@@ -149,9 +151,6 @@ h6 {
 .set2box {
   display: flex;
 }
-.set2box p {
-  margin-top: -14px;
-}
 .set2box h4 {
   font-weight: 600;
 }
@@ -184,10 +183,6 @@ h6 {
 }
 .box-cart button:hover {
   color: #969696;
-}
-#set3-box {
-  display: flex;
-  flex-direction: column;
 }
 select {
   border-radius: 5px;
@@ -235,4 +230,11 @@ select {
 #footer > h4 {
   font-size: 12px;
   color: grey;
+}
+#afterBox{
+  text-align: center;
+}
+#afterBox>img{
+  width: 30%;
+  height: auto;
 }

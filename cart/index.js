@@ -5,7 +5,7 @@ let dataObj =
       title: "PALM ANGELS",
       type: "T-shirts",
       color: "White",
-      size: "XfshS",
+      size: "XS",
       prize: "245",
     },
     {
@@ -13,7 +13,7 @@ let dataObj =
       title: "PALM ANGELS",
       type: "T-shirts",
       color: "White",
-      size: "XShs",
+      size: "XS",
       prize: "145",
     },
     {
@@ -21,7 +21,7 @@ let dataObj =
       title: "PALM ANGELS",
       type: "T-shirts",
       color: "White",
-      size: "XShs",
+      size: "XS",
       prize: "546",
     },
     {
@@ -29,7 +29,7 @@ let dataObj =
       title: "PALM ANGELS",
       type: "T-shirts",
       color: "White",
-      size: "XShs",
+      size: "XS",
       prize: "546",
     },
     {
@@ -37,7 +37,7 @@ let dataObj =
       title: "PALM ANGELS",
       type: "T-shirts",
       color: "White",
-      size: "XShs",
+      size: "XS",
       prize: "546",
     },
     {
@@ -45,7 +45,7 @@ let dataObj =
       title: "PALM ANGELS",
       type: "T-shirts",
       color: "White",
-      size: "XShs",
+      size: "XS",
       prize: "546",
     },
   ] || [];

@@ -6,6 +6,7 @@ let shipping = 26;
 let promo = 0;
 let order_total = 0;
 let count = 0;
+
 document.getElementById("taxes").textContent = `US$ ${taxes}`;
 document.getElementById("shipping").textContent = `US$ ${shipping}`;
 //add conditions for null data
@@ -13,12 +14,13 @@ append(getData);
 function append(data) {
   count = data.length;
   if (count === 0) {
-    // document.getElementById("container").style.display="none";
+    let div = document.createElement("div");
+    div.id = "afterBox";
     let img = document.createElement("img");
 
-    img.src = `https://media2.giphy.com/media/3oKHWvON3jhmmf38s0/200.webp?cid=ecf05e47n8tkrtgq7c199jmi26iw0wkmiit0tx0r8u15ldkr&rid=200.webp&ct=g`;
-    container.append(img);
-    // container.style.textAlign="center"
+    img.src = `https://cdn.dribbble.com/users/2059463/screenshots/4828452/polizas_gif.gif`;
+    div.append(img);
+    container.append(div);
     img.className = "whenNull";
     document.getElementById("taxes").textContent = `US$ ${0}`;
     document.getElementById("shipping").textContent = `US$ ${0}`;
@@ -28,21 +30,14 @@ function append(data) {
     div.className = "box-cart";
     let img = document.createElement("img");
     img.src = el.img;
-    let set1 = document.createElement("div");
     let set2 = document.createElement("div");
     let title = document.createElement("h4");
     title.textContent = el.title;
-    let type = document.createElement("p");
-    type.textContent = el.type;
-    set1.append(title, type);
-    set2.append(img, set1);
+    set2.append(img, title);
     set2.className = "set2box";
-    let color = document.createElement("p");
-    color.innerText = el.color;
     let size = document.createElement("p");
     size.textContent = el.size;
     //remove and quantity
-    let set3 = document.createElement("div");
     let quantity = document.createElement("select");
     quantity.className = "form-select";
     quantity.innerHTML = `
@@ -58,18 +53,15 @@ function append(data) {
       localStorage.setItem("Data", JSON.stringify(data));
     });
     let remove = document.createElement("button");
-    set3.append(quantity, remove);
-    set3.id = "set3-box";
     remove.innerHTML = `<i class="fa-solid fa-xmark"></i>${"REMOVE"}`;
     remove.addEventListener("click", function () {
       data.splice(i, 1);
-      event.target.parentNode.remove();
       localStorage.setItem("Data", JSON.stringify(data));
       window.location.reload();
     });
     let prize = document.createElement("h4");
     prize.innerText = `US$ ${el.prize}`;
-    div.append(set2, color, size, set3, prize);
+    div.append(set2, size, quantity, prize, remove);
     container.append(div);
     document.getElementById("count").textContent = `(${count})`;
   });
