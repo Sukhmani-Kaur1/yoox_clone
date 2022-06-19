@@ -29,13 +29,13 @@ let appendDataToNavbar = (appendDatacontainer,arrDataAtoAppend) => {
        let productsNavbar=  document.createElement("productsNavbar")
        productsNavbar.setAttribute("id","productsNavbar")
        let img1 = document.createElement("img")
-       img1. src="./images/visibility.png"
+       img1.src="../yoox_clone/MyWork/images/visibility.png"
 
        let img2 = document.createElement("img")
-       img2. src="./images/heart.png"
+       img2.src="../yoox_clone/MyWork/images/heart.png"
 
        let img3= document.createElement("img")
-       img3. src="./images/badge_new_2018n.png"
+       img3.src="../yoox_clone/MyWork/images/badge_new_2018n.png"
 
        productsNavbar.append(img1,img2,img3)
 

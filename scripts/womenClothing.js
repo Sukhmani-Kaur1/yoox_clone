@@ -353,11 +353,13 @@ document.querySelector("#dress2").addEventListener("click", function () {
 //     var select=document.querySelector("#Skirts").textContent;
 //     // console.log(select)
 //     var filter=data.filter((elem)=>{
-//         return elem.type==select
-//     });
-//     // console.log(filter)
-//     display(filter)
-// });
+    //         return elem.type==select
+    //     });
+    //     // console.log(filter)
+    //     display(filter)
+    // });
+    var arr = JSON.parse(localStorage.getItem("dreamData"))||[];
+    var arr2 =  JSON.parse(localStorage.getItem("cartData"))||[];
 function display(data) {
     console.log("data")
     data.map(function (el) {
@@ -409,7 +411,6 @@ function display(data) {
         disc.setAttribute("class", "disc")
 
 
-
         var div3 = document.createElement("div");
         div3.setAttribute("id", "price")
 
@@ -430,7 +431,9 @@ function display(data) {
         document.querySelector("#dressdiv").append(card)
         fav.addEventListener("click", function () {
             alert("Product is added to favourite")
-            window.location.href = "fav.html";
+            arr.push(el)
+            localStorage.setItem("dreamData", JSON.stringify(arr))
+            // window.location.href = "fav.html";
         })
     })
 }
