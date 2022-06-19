@@ -174,11 +174,13 @@ var Data=[
         price:"987",
         strikedoffprice:"344",
         size:"M  XXL" 
-     },
-]
+      },
+   ]
 import {navbar} from "../navbar.js"
 document.getElementById("Nav").innerHTML=navbar()
-
+localStorage.setItem("menData",JSON.stringify(Data))
+var menD = JSON.parse(localStorage.getItem("menData")) || []
+display(menD)
 let cartCount=JSON.parse(localStorage.getItem("cartData"))
 document.getElementById("bag_count").innerText=cartCount.length
 console.log(cartCount.length)
@@ -246,9 +248,7 @@ document.querySelector("#dress2").addEventListener("click", function () {
         return (flag2 = true);
     }
 });
-localStorage.setItem("menData",JSON.stringify(Data))
-var menD = JSON.parse(localStorage.getItem("menData")) || []
-display(menD)
+
 function display(data) {
    //  console.log("data")
     data.map(function (el) {
