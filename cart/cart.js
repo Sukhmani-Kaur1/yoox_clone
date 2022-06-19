@@ -7,6 +7,52 @@ let promo = 0;
 let order_total = 0;
 let count = 0;
 
+let cartCount=JSON.parse(localStorage.getItem("cartData"))
+document.getElementById("bag_count").innerText=cartCount.length
+console.log(cartCount.length)
+
+let favCount=JSON.parse(localStorage.getItem("dreamData"))
+document.getElementById("fav_count").innerText=favCount.length
+console.log(favCount.length)
+
+
+
+document.getElementById("click_btn").addEventListener("click",clickme)
+let clicked=false
+function clickme(){
+    if(clicked==false){
+        clicked=true;
+    }
+    else{
+        clicked=false
+    }
+
+        if(clicked){
+            document.getElementById("search_bar").style.display="block";
+        }  
+        else{
+            document.getElementById("search_bar").style.display="none";
+        }
+}
+
+document.getElementById("cust_care").addEventListener("click",customerCare)
+let clicked_2=false;
+function customerCare(){
+    if(clicked_2==false){
+        clicked_2=true
+    }
+    else{
+        clicked_2=false;
+    }
+
+        if(clicked_2){
+            document.getElementById("customer_care").style.display="block";
+        }
+        else{
+            document.getElementById("customer_care").style.display="none";
+        }
+}
+
 document.getElementById("taxes").textContent = `US$ ${taxes}`;
 document.getElementById("shipping").textContent = `US$ ${shipping}`;
 //add conditions for null data
@@ -29,7 +75,7 @@ function append(data) {
     let div = document.createElement("div");
     div.className = "box-cart";
     let img = document.createElement("img");
-    img.src = el.img;
+    img.src = el.image;
     let set2 = document.createElement("div");
     let title = document.createElement("h4");
     title.textContent = el.name;

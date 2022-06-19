@@ -9,7 +9,7 @@ function append(data) {
     let div = document.createElement("div");
     div.className = "box-fav";
     let img = document.createElement("img");
-    img.src = el.img;
+    img.src = el.image;
     let title = document.createElement("h4");
     title.textContent = el.name;
     let remove = document.createElement("button");

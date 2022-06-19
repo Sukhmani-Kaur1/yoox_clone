@@ -1,0 +1,523 @@
+#nav1{
+    width: 100%;
+    height: 37px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+}
+#nav1_left{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -100px;
+}
+#countries:hover,#cust_care:hover,#reg:hover,#log:hover{
+    background-color: rgb(240, 239, 239);
+    /* padding: 0px 7px 0px 7px; */
+    text-decoration: none;
+}
+
+#countries,#cust_care,#reg,#log{
+    text-decoration: underline;
+    padding-left: 7px;
+    padding-right: 7px ;
+}
+#reg,#log{
+    display: flex;
+    align-items: baseline;
+}
+#reg>i,#log>i{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#nav1_right{
+    width: 100px;
+    display: flex;
+    justify-content:space-between; 
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: small; */
+}
+#nav2{
+    margin-top: 37px;
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+}
+#nav2_left{
+    margin-left: 60px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+}
+#YooxLogo>img{
+    height: 100px;
+ 
+}
+#nav2_right{
+    margin-right: 110px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+     
+}
+#offer_img{
+    margin-top: 97px;
+}
+#offer_img>img{
+    width: 100%;
+}
+#one{
+   position: absolute;
+   width: 80%;
+   left: 0;
+}
+#two{
+   position: relative;
+   margin-top: 65px;
+   width: 100%;
+   left: 0;
+}
+body{
+    background-color: rgb(239, 237, 237);
+}
+#offer_img>h3{
+    margin-left: 38%;
+    position: relative;
+    margin-top: -760px;
+    color: rgb(10, 10, 10);
+    font-size: larger;
+}
+#offer_img>p{
+    margin-left: 36%;
+    position: relative;
+    margin-top: -760px;
+    color: rgb(10, 10, 10);
+    
+}
+#love_yourself{
+    width: 390px;
+    height: 140px;
+    background-color: #ffffff;
+    margin-top: 1260px;
+    margin-left: 15px;
+    /* z-index: 1; */
+    position: relative;
+    line-height: 20px;
+    padding: 18px 28px;
+    /* font-size: small; */
+}
+#ss22_collections{
+    width: 400px;
+    height: 140px;
+    background-color: #ffffff;
+    margin-top: 535px;
+    margin-left: 165px;
+    z-index: 1;
+    position: relative;
+    line-height: 20px;
+    padding: 18px 28px;
+}
+#designer_1{
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-left: 6.8%;
+    margin-top: 150px;
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+#multi_form,#ward_heros{
+    /* border: 1px solid teal; */
+    width: 400px;
+    height: auto;
+    text-align: center;
+    /* padding: 8px 25px; */
+}
+#multi_form>img,#ward_heros>img{
+    width: 100%;
+}
+#multi_form>h1,#ward_heros>h1{
+   font-size: 24px;
+}
+#designers{
+    width: 420px;
+    height: 500px;
+    border: 0px solid teal;
+    text-align: center;
+    line-height: 10px;
+    background-color: #ffffff;
+    position: relative;
+    margin: auto;
+    margin-top: 110px;
+    padding-top: 40px;
+}
+#design_head>h4{
+    color: rgb(39, 38, 38);
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding-bottom: 40px;
+
+}
+#viewall_1>h4{
+    padding: 30px 0px 30px  0px;
+    color: rgb(39, 38, 38);
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-decoration: underline;
+    
+}
+#women:hover,#men:hover,#kids:hover,#design_art:hover{
+    background-color: yellow;
+    height: 6px;
+   
+}
+#dolce_gabbana:hover,#roberto_cavalli:hover,#stella_mccartney:hover,#maison_margiela:hover,#marni:hover,#chloe:hover,#versace:hover,#balenciaga:hover,#gucci:hover,#prada:hover{
+    color: rgb(181, 175, 175);
+}
+#new_arrivals>h1{
+    margin: auto;
+    text-align: center;
+    margin-top: 300px;
+    font-weight: lighter;
+    font-size: 28px;
+}
+#new_arrivals>h4{
+    text-align: center;
+}
+#viewall_2:hover, #inspired:hover,#shop:hover{
+    color: grey;
+}
+#new_arrival{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+#card1,#card2,#card3{
+    width: 32%;
+    height: auto;
+    background-color: white;
+    /* border: 1px solid teal; */
+    line-height: 10px;
+}
+#str_off{
+    text-decoration: line-through;
+    margin-right: 20px;
+    color: grey;
+}
+#new_arrival_2{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    margin-top: 50px;
+    align-items: center; 
+}
+#box_outer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 1000px;
+    margin: auto;
+    /* border: 1px solid teal; */
+    position: absolute;
+    margin-left: 60px;
+}
+#lets_twist,#levis{
+    width: 31%;
+    height: 700px;
+    /* border: 1px solid; */
+    margin-top: 150px;
+    text-align: center;
+}
+#lets_twist>img,#levis>img{
+    width: 100%;
+}
+#montnlang{
+    width:420px;
+    position: relative;
+    margin: auto;
+    margin-top: -870px;
+    text-align: center;
+}
+#montnlang>img{
+    width: 100%;
+}
+#one_of_a_kind{
+    margin-top: 300px;
+}
+#one_of_a_kind>h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 28px;
+    margin-top: 70px;
+}
+#one_of_a_kind>h4{
+    text-align: center;
+}
+#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11,#card12{
+    width: 25%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+#carousal{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    overflow: auto;
+    max-width: 1200px;
+    margin: auto;
+    gap: 25px;
+}
+img{
+    width: 100%;
+}
+#where_people_dance{
+    width: 65%;
+    margin-left:150px ;
+    margin-top: 100px;
+    position: absolute;
+}
+#get_inspired{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+#lower_impact{
+    width: 20%;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    line-height: 5px;
+    position: relative;
+    margin-top: -550px;
+    margin-left: 920px;
+    padding-top: -10px;
+}
+#last_div{
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+    border: 0px solid teal;
+    left: 0;
+}
+#last_div>img{
+    width: 50%;
+}
+#out_of_office{
+    width: 400px;
+    height: 140px;
+    background-color: #ffffff;
+    margin-top: -180px;
+    margin-left: 870px;
+    /* z-index: 1; */
+    position: relative;
+    line-height: 20px;
+    padding: 18px 28px;
+}
+#crazy_mood{
+    width: 400px;
+    height: 140px;
+    background-color: #ffffff;
+    margin-top: -200px;
+    margin-left: 10px;
+    /* z-index: 1; */
+    position: relative;
+    line-height: 20px;
+    padding: 18px 28px;
+}
+.carousel-inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+#search_bar{
+    width: 300px;
+    display: none;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.2px solid grey;
+}
+#select{
+    display: flex;
+    text-align: center;
+    width: 55%;
+    margin: auto;
+}
+.women,.men,#checkbox{
+    display: flex;
+    align-items:baseline;
+    margin: auto;
+}
+#f,#m{
+    margin-top: -10px;
+     width: 10px;
+}
+#bottom_info{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    text-align: center; 
+
+}
+#b3{
+    width: 300px;
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+#b1,#b2{
+    width: 110px;
+}
+.insert_email{
+    width: 80%;
+    height: 30px;
+}
+#btn1{
+    width: 80%;
+    height: 40px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    border: 0;
+}
+#customer_care{
+    width: 350px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    margin-top: -5840px;
+    margin-left: 100px;
+    z-index: 1;
+    display: none;
+}
+#icons{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center; padding: 10px;
+}
+#icon1,#icon2{
+    background-color: rgb(232, 229, 229);
+    width: 85px;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+    /* padding-left: 0px; */
+   
+}
+#icon1>p,#icon2>p{
+    font-size: x-small;
+}
+#area{
+    background-color: rgb(39, 38, 38);
+    padding: 15px;
+    color: white;
+}
+#footer_1{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+/* #footer_left,#footer_right{
+   
+    width: 1500px;
+} */
+#footer_left{
+    width: 25%;
+    align-items: center;
+     display: flex;
+     justify-content: space-between;
+}
+#bottom_line{
+width: 100%;
+padding: 50px 0px;
+background-color: rgb(43, 42, 42);
+color: white;
+text-align: center;
+}
+#bottom_line>p{
+font-size: smaller;
+}
+/* #shopping_bag{
+position: absolute;
+} */
+#bag_count,#fav_count{
+margin-bottom: 20px;
+font-size: small;
+color: #ffffff;
+background-color: red;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 50%;
+}
+
+/* carousal */
+
+#slideshow {
+    color: white;
+    margin-top: 10px;
+    background-color: white;
+    
+}
+.container-fluid {
+    padding: 0% 3%;
+}
+.commonCSS {
+    margin-top: 10px;
+    height: 400px;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 3%;
+    
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #ff6f61;
+    height: 30px;
+    width: 20px;
+}
+.slideData {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 10px;
+    color: black;
+    margin-left: 25px;
+}

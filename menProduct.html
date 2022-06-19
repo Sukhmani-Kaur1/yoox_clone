@@ -17,6 +17,8 @@
 <script>
     var data = JSON.parse(localStorage.getItem("zoomin"));
     console.log(data)
+    let arr = JSON.parse(localStorage.getItem("cartData"))||[];
+    let arr2 = JSON.parse(localStorage.getItem("dreamData"))||[];
     function display(el) {
 
         // data.map(function (el) {
@@ -64,12 +66,16 @@
         var btn = document.createElement("button")
         btn.textContent = "ADD TO SHOPPING BAG";
         btn.addEventListener("click",function(){
-            //    localStorage.setItem("addcart",JSON.stringify(el))
+            arr.push(el)
+               localStorage.setItem("cartData",JSON.stringify(arr))
         })
 
         var btn1 = document.createElement("button")
         btn1.textContent = "ADD TO DREAM BOX";
-
+        btn1.addEventListener("click",function(){
+            arr2.push(el)
+               localStorage.setItem("dreamData",JSON.stringify(arr2))
+        })
 
 
         var div2 = document.createElement("div")

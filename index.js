@@ -1,3 +1,13 @@
+let cartCount=JSON.parse(localStorage.getItem("cartData"))
+document.getElementById("bag_count").innerText=cartCount.length
+console.log(cartCount.length)
+
+let favCount=JSON.parse(localStorage.getItem("dreamData"))
+document.getElementById("fav_count").innerText=favCount.length
+console.log(favCount.length)
+
+
+
 document.getElementById("click_btn").addEventListener("click",clickme)
 let clicked=false
 function clickme(){
@@ -33,6 +43,8 @@ function customerCare(){
             document.getElementById("customer_care").style.display="none";
         }
 }
+
+// import {mynavbar} from "../MyWork/mynavbarComponents/mynavbar.js"
 
 
 
@@ -74,7 +86,5 @@ function customerCare(){
 // }]
 
 // localStorage.setItem("Data",JSON.stringify(obj))
-// let cartCount=JSON.parse(localStorage.getItem("Data"))
-// document.getElementById("bag_count").innerText=cartCount.length
-// console.log(cartCount.length)
+
 
