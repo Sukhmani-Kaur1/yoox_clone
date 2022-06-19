@@ -1,3 +1,10 @@
+
+// import { mynavbar } from "../yoox_clone/MyWork/mynavbarComponents/mynavbar.js";
+// document.getElementById("myoneNavbar").innerHTML = mynavbar();
+// import sheet from "../yoox_clone/MyWork/styles/mynavbar.css" assert { type: "css" };
+// document.adoptedStyleSheets = [sheet];
+
+
 let cartCount=JSON.parse(localStorage.getItem("cartData"))
 document.getElementById("bag_count").innerText=cartCount.length
 console.log(cartCount.length)

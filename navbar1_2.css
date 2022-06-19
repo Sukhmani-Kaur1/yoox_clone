@@ -525,31 +525,16 @@ a{
     text-decoration: none;
     color: black;
 }
-#manageMynavbar{
-    margin-top: 150px;
-  
-}
-#navbaradjujtment{
-
-    display: flex;
-    margin: auto;
-    width: 100%;
-
-    height: 40px;
-    background-color: black;
-    color: white;
-    align-items: center;
-    justify-content: center;
+#manageNavbarmy{
+    margin-top:100px;
 
     
-    }
-    #navbaradjujtment>p{
+}
+#nav3>img{
+    width: 100%;
+    height: 40px;
+    
+}
 
-        margin-top:10px;
-    }
-    #myoneNavbar{
-        height: 100px;
-        width: 100%;
-        /* margin-bottom: -100px;
-        margin-top: 100px; */
-    }
+   
+

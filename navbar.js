@@ -24,7 +24,7 @@ function navbar(){
             <div id="design_art"><p><a href="../yoox_clone/index.html">DESIGN+ART</a> </p></div>
         </div>
         <div id="YooxLogo">
-            <img src="../images/yoox logo.png" alt="">
+            <img src="../yoox_clone/images/yoox logo.png">
         </div>
         <input type="text" id="search_bar">
         <div id="nav2_right">
@@ -34,9 +34,6 @@ function navbar(){
             
         </div>
     
-    </div>
-    <div id="myNavbar">
-
-    </div>`
+    </div> `
 }
 export {navbar}

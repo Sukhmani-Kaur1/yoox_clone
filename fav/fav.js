@@ -1,3 +1,6 @@
+// import {navbar} from "../yoox_clone/navbar.js"
+// document.getElementById("Nav").innerHTML=navbar()
+
 let getData = JSON.parse(localStorage.getItem("dreamData"));
 
 let arr = JSON.parse(localStorage.getItem("Data")) || [];
