@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="signup.css">
-
+    
 </head>
 <body>
-    
-    <form>
+  
+    <form id="form-one">
         
         <h2 id="top"><b>It's great to see you again.</b></h2>
         <p id="login">Login with</p>
@@ -29,7 +29,8 @@
     </form>
     
 </body>
-<script>
+<script type="module">
+   
     var form=document.querySelector("form");
     var userData=JSON.parse(localStorage.getItem("userData")); // null
 
@@ -46,7 +47,7 @@
         }else if(userData.email==data.email && userData.password == data.password){
             alert("Sign In Successful");
             localStorage.setItem("signin",JSON.stringify(userData));
-            window.location.href="landing_page.html"
+            window.location.href="index.html"
         }else{
             alert("User Does not exist")
         }
