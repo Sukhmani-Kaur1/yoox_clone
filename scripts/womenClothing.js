@@ -328,6 +328,55 @@ var data = [
 
 // var women = JSON.parse(localStorage.getItem(womenData)) || []
 // // display(women)
+import {navbar} from "../navbar.js"
+document.getElementById("Nav").innerHTML=navbar()
+
+let cartCount=JSON.parse(localStorage.getItem("cartData"))
+document.getElementById("bag_count").innerText=cartCount.length
+console.log(cartCount.length)
+
+let favCount=JSON.parse(localStorage.getItem("dreamData"))
+document.getElementById("fav_count").innerText=favCount.length
+console.log(favCount.length)
+
+
+
+document.getElementById("click_btn").addEventListener("click",clickme)
+let clicked=false
+function clickme(){
+    if(clicked==false){
+        clicked=true;
+    }
+    else{
+        clicked=false
+    }
+
+        if(clicked){
+            document.getElementById("search_bar").style.display="block";
+        }  
+        else{
+            document.getElementById("search_bar").style.display="none";
+        }
+}
+
+document.getElementById("cust_care").addEventListener("click",customerCare)
+let clicked_2=false;
+function customerCare(){
+    if(clicked_2==false){
+        clicked_2=true
+    }
+    else{
+        clicked_2=false;
+    }
+
+        if(clicked_2){
+            document.getElementById("customer_care").style.display="block";
+        }
+        else{
+            document.getElementById("customer_care").style.display="none";
+        }
+}
+
 var flag = true;
 document.querySelector("#dress1").addEventListener("click", function () {
     if (flag) {
@@ -353,11 +402,13 @@ document.querySelector("#dress2").addEventListener("click", function () {
 //     var select=document.querySelector("#Skirts").textContent;
 //     // console.log(select)
 //     var filter=data.filter((elem)=>{
-//         return elem.type==select
-//     });
-//     // console.log(filter)
-//     display(filter)
-// });
+    //         return elem.type==select
+    //     });
+    //     // console.log(filter)
+    //     display(filter)
+    // });
+    var arr = JSON.parse(localStorage.getItem("dreamData"))||[];
+    var arr2 =  JSON.parse(localStorage.getItem("cartData"))||[];
 function display(data) {
     console.log("data")
     data.map(function (el) {
@@ -409,7 +460,6 @@ function display(data) {
         disc.setAttribute("class", "disc")
 
 
-
         var div3 = document.createElement("div");
         div3.setAttribute("id", "price")
 
@@ -430,7 +480,9 @@ function display(data) {
         document.querySelector("#dressdiv").append(card)
         fav.addEventListener("click", function () {
             alert("Product is added to favourite")
-            window.location.href = "fav.html";
+            arr.push(el)
+            localStorage.setItem("dreamData", JSON.stringify(arr))
+            // window.location.href = "fav.html";
         })
     })
 }

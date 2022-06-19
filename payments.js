@@ -1,9 +1,5 @@
-
-// import { mynavbar } from "../yoox_clone/MyWork/mynavbarComponents/mynavbar.js";
-// document.getElementById("myoneNavbar").innerHTML = mynavbar();
-// import sheet from "../yoox_clone/MyWork/styles/mynavbar.css" assert { type: "css" };
-// document.adoptedStyleSheets = [sheet];
-
+import {navbar} from "../yoox_clone/navbar.js"
+document.getElementById("Nav").innerHTML=navbar();
 
 let cartCount=JSON.parse(localStorage.getItem("cartData"))
 document.getElementById("bag_count").innerText=cartCount.length
@@ -50,49 +46,3 @@ function customerCare(){
             document.getElementById("customer_care").style.display="none";
         }
 }
-
-
-// import {mynavbar} from "../MyWork/mynavbarComponents/mynavbar.js"
-
-
-
-// let obj=[{
-//     "a":12 
-// },
-// {
-//     "b":13
-// },
-// {
-//    "c":14
-// },
-// {
-//     "c":14
-//  },
-//  {
-//     "c":14
-//  },
-//  {
-//     "c":14
-//  },
-//  {
-//     "c":14
-//  },
-//  {
-//     "c":14
-//  },
-//  {
-//     "c":14
-//  },
-//  {
-//     "c":14
-//  },
-//  {
-//     "c":14
-//  },
-// {
-//     "d":15
-// }]
-
-// localStorage.setItem("Data",JSON.stringify(obj))
-
-

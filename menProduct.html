@@ -7,16 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/menProduct.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../yoox_clone/navbar1_2.css">
+  <script
+    src="https://kit.fontawesome.com/b72a7cd1bc.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 
 <body>
-    <div id="dressdiv"></div>
+    <div id="Nav"></div>
+    <div id="dressdiv">
+
+    </div>
 </body>
 
 </html>
-<script>
+<script type="module">
+
+import {navbar} from "../yoox_clone/navbar.js"
+document.getElementById("Nav").innerHTML=navbar()
+
+let cartCount=JSON.parse(localStorage.getItem("cartData"))
+document.getElementById("bag_count").innerText=cartCount.length
+console.log(cartCount.length)
+
+let favCount=JSON.parse(localStorage.getItem("dreamData"))
+document.getElementById("fav_count").innerText=favCount.length
+console.log(favCount.length)
+
+
+
+document.getElementById("click_btn").addEventListener("click",clickme)
+let clicked=false
+function clickme(){
+    if(clicked==false){
+        clicked=true;
+    }
+    else{
+        clicked=false
+    }
+
+        if(clicked){
+            document.getElementById("search_bar").style.display="block";
+        }  
+        else{
+            document.getElementById("search_bar").style.display="none";
+        }
+}
+
+document.getElementById("cust_care").addEventListener("click",customerCare)
+let clicked_2=false;
+function customerCare(){
+    if(clicked_2==false){
+        clicked_2=true
+    }
+    else{
+        clicked_2=false;
+    }
+
+        if(clicked_2){
+            document.getElementById("customer_care").style.display="block";
+        }
+        else{
+            document.getElementById("customer_care").style.display="none";
+        }
+}
+
     var data = JSON.parse(localStorage.getItem("zoomin"));
     console.log(data)
+    let arr = JSON.parse(localStorage.getItem("cartData"))||[];
+    let arr2 = JSON.parse(localStorage.getItem("dreamData"))||[];
     function display(el) {
 
         // data.map(function (el) {
@@ -64,12 +126,16 @@
         var btn = document.createElement("button")
         btn.textContent = "ADD TO SHOPPING BAG";
         btn.addEventListener("click",function(){
-            //    localStorage.setItem("addcart",JSON.stringify(el))
+            arr.push(el)
+               localStorage.setItem("cartData",JSON.stringify(arr))
         })
 
         var btn1 = document.createElement("button")
         btn1.textContent = "ADD TO DREAM BOX";
-
+        btn1.addEventListener("click",function(){
+            arr2.push(el)
+               localStorage.setItem("dreamData",JSON.stringify(arr2))
+        })
 
 
         var div2 = document.createElement("div")

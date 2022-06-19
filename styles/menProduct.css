@@ -10,6 +10,9 @@
 h3{
     font-size: 20px;
 }
+#dressdiv{
+    margin-top: 100px;
+}
 .box2{
     /* border: 1px solid red; */
     display: flex;

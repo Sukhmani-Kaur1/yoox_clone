@@ -730,6 +730,32 @@ font-size: 13px;
     color: black;
 }
 
+#manageMynavbar{
+    margin-top: 99px;
+}
+
+#managinngimage{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+
+
+
+}
+#myNavbar{
+    margin-top: -3.5px;
+    position: fixed;
+}
+
+#manageMynavbarImage{
+height:100px;
+}
+
+#clothongAdjusting{
+    margin-top:50px;
+}
+
 
 
 
