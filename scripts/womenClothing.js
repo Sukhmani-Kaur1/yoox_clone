@@ -1,4 +1,4 @@
-var data = [
+var Data = [
     {
         image: "https://www.yoox.com/images/items/12/12793777dm_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
 
@@ -324,10 +324,7 @@ var data = [
         size: " L XL XXL"
     },
 ]
-// localStorage.setItem("womenData", JSON.stringify("data"))
 
-// var women = JSON.parse(localStorage.getItem(womenData)) || []
-// // display(women)
 import {navbar} from "../navbar.js"
 document.getElementById("Nav").innerHTML=navbar()
 
@@ -350,16 +347,16 @@ function clickme(){
     else{
         clicked=false
     }
-
+    
         if(clicked){
             document.getElementById("search_bar").style.display="block";
         }  
         else{
             document.getElementById("search_bar").style.display="none";
         }
-}
+    }
 
-document.getElementById("cust_care").addEventListener("click",customerCare)
+    document.getElementById("cust_care").addEventListener("click",customerCare)
 let clicked_2=false;
 function customerCare(){
     if(clicked_2==false){
@@ -368,13 +365,13 @@ function customerCare(){
     else{
         clicked_2=false;
     }
-
-        if(clicked_2){
-            document.getElementById("customer_care").style.display="block";
-        }
-        else{
-            document.getElementById("customer_care").style.display="none";
-        }
+    
+    if(clicked_2){
+        document.getElementById("customer_care").style.display="block";
+    }
+    else{
+        document.getElementById("customer_care").style.display="none";
+    }
 }
 
 var flag = true;
@@ -399,18 +396,22 @@ document.querySelector("#dress2").addEventListener("click", function () {
 });
 
 // document.getElementById("Skirts").addEventListener("click",()=>{
-//     var select=document.querySelector("#Skirts").textContent;
-//     // console.log(select)
-//     var filter=data.filter((elem)=>{
-    //         return elem.type==select
-    //     });
-    //     // console.log(filter)
-    //     display(filter)
-    // });
-    var arr = JSON.parse(localStorage.getItem("dreamData"))||[];
-    var arr2 =  JSON.parse(localStorage.getItem("cartData"))||[];
-function display(data) {
-    console.log("data")
+    //     var select=document.querySelector("#Skirts").textContent;
+    //     // console.log(select)
+    //     var filter=data.filter((elem)=>{
+        //         return elem.type==select
+        //     });
+        //     // console.log(filter)
+        //     display(filter)
+        // });
+        localStorage.setItem("womenData", JSON.stringify(Data))
+
+var women = JSON.parse(localStorage.getItem("womenData")) || []
+        var arr = JSON.parse(localStorage.getItem("dreamData"))||[];
+        // var arr2 =  JSON.parse(localStorage.getItem("cartData"))||[];
+        display(women)
+        function display(data) {
+            // console.log(data)
     data.map(function (el) {
         var card = document.createElement("div");
         card.setAttribute("id", "card")
@@ -486,7 +487,6 @@ function display(data) {
         })
     })
 }
-display(data);
 
 
 

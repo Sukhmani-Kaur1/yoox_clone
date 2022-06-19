@@ -1,4 +1,4 @@
-var data=[
+var Data=[
     {
        image:"https://www.yoox.com/images/items/12/12802961wt_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
        name:"PALM ANGELS",
@@ -176,7 +176,6 @@ var data=[
         size:"M  XXL" 
      },
 ]
-localStorage.setItem("menData",JSON.stringify("data"))
 import {navbar} from "../navbar.js"
 document.getElementById("Nav").innerHTML=navbar()
 
@@ -225,8 +224,7 @@ function customerCare(){
             document.getElementById("customer_care").style.display="none";
         }
 }
-var men =JSON.parse(localStorage.getItem("data"))|| []
-display(men)
+
 var flag= true;
 document.querySelector("#dress1").addEventListener("click",function (){
     if(flag){
@@ -248,8 +246,11 @@ document.querySelector("#dress2").addEventListener("click", function () {
         return (flag2 = true);
     }
 });
+localStorage.setItem("menData",JSON.stringify(Data))
+var menD = JSON.parse(localStorage.getItem("menData")) || []
+display(menD)
 function display(data) {
-    console.log("data")
+   //  console.log("data")
     data.map(function (el) {
         var card = document.createElement("div");
         card.setAttribute("id", "card")
@@ -328,4 +329,3 @@ function display(data) {
         }
     })
 }
-display(data);
