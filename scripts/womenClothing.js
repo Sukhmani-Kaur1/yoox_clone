@@ -327,16 +327,20 @@ var Data = [
 
 import {navbar} from "../navbar.js"
 document.getElementById("Nav").innerHTML=navbar()
+  localStorage.setItem("womenData", JSON.stringify(Data))
 
+var women = JSON.parse(localStorage.getItem("womenData")) || []
+display(women)
+var arr = JSON.parse(localStorage.getItem("dreamData"))||[];
 let cartCount=JSON.parse(localStorage.getItem("cartData"))
-document.getElementById("bag_count").innerText=cartCount.length
 console.log(cartCount.length)
 
 let favCount=JSON.parse(localStorage.getItem("dreamData"))
-document.getElementById("fav_count").innerText=favCount.length
 console.log(favCount.length)
 
 
+document.getElementById("fav_count").innerText=favCount.length
+document.getElementById("bag_count").innerText=cartCount.length
 
 document.getElementById("click_btn").addEventListener("click",clickme)
 let clicked=false
@@ -357,6 +361,7 @@ function clickme(){
     }
 
     document.getElementById("cust_care").addEventListener("click",customerCare)
+    
 let clicked_2=false;
 function customerCare(){
     if(clicked_2==false){
@@ -404,12 +409,9 @@ document.querySelector("#dress2").addEventListener("click", function () {
         //     // console.log(filter)
         //     display(filter)
         // });
-        localStorage.setItem("womenData", JSON.stringify(Data))
-
-var women = JSON.parse(localStorage.getItem("womenData")) || []
-        var arr = JSON.parse(localStorage.getItem("dreamData"))||[];
+      
         // var arr2 =  JSON.parse(localStorage.getItem("cartData"))||[];
-        display(women)
+
         function display(data) {
             // console.log(data)
     data.map(function (el) {

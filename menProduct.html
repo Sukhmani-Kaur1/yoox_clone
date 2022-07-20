@@ -135,34 +135,11 @@
 
 import {navbar} from "./navbar.js"
 document.getElementById("Nav").innerHTML=navbar()
+let arr = JSON.parse(localStorage.getItem("cartData"))||[];
+let arr2 = JSON.parse(localStorage.getItem("dreamData"))||[];
+var data = JSON.parse(localStorage.getItem("zoomin"));
+display(data)
 
-let cartCount=JSON.parse(localStorage.getItem("cartData"))
-document.getElementById("bag_count").innerText=cartCount.length
-console.log(cartCount.length)
-
-let favCount=JSON.parse(localStorage.getItem("dreamData"))
-document.getElementById("fav_count").innerText=favCount.length
-console.log(favCount.length)
-
-
-
-document.getElementById("click_btn").addEventListener("click",clickme)
-let clicked=false
-function clickme(){
-    if(clicked==false){
-        clicked=true;
-    }
-    else{
-        clicked=false
-    }
-
-        if(clicked){
-            document.getElementById("search_bar").style.display="block";
-        }  
-        else{
-            document.getElementById("search_bar").style.display="none";
-        }
-}
 
 document.getElementById("cust_care").addEventListener("click",customerCare)
 let clicked_2=false;
@@ -182,10 +159,9 @@ function customerCare(){
         }
 }
 
-    var data = JSON.parse(localStorage.getItem("zoomin"));
+    
     console.log(data)
-    let arr = JSON.parse(localStorage.getItem("cartData"))||[];
-    let arr2 = JSON.parse(localStorage.getItem("dreamData"))||[];
+    
     function display(el) {
 
         // data.map(function (el) {
@@ -235,6 +211,7 @@ function customerCare(){
         btn.addEventListener("click",function(){
             arr.push(el)
                localStorage.setItem("cartData",JSON.stringify(arr))
+               window.location.reload()
         })
 
         var btn1 = document.createElement("button")
@@ -242,6 +219,7 @@ function customerCare(){
         btn1.addEventListener("click",function(){
             arr2.push(el)
                localStorage.setItem("dreamData",JSON.stringify(arr2))
+               window.location.reload()
         })
 
 
@@ -274,5 +252,9 @@ function customerCare(){
         document.querySelector("#dressdiv").append(card)
         // })
     }
+<<<<<<< HEAD
     display(data);
 </script> -->
+=======
+</script>
+>>>>>>> d7edfc422e316cbac3914c180f92350c37f44aae

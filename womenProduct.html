@@ -12,10 +12,12 @@
 </body>
 </html>
 <script>
+   import {navbar} from "../navbar.js"
+document.getElementById("Nav").innerHTML=navbar()
      var arr = JSON.parse(localStorage.getItem("dreamData"))||[];
     var arr2 =  JSON.parse(localStorage.getItem("cartData"))||[];
     var data = JSON.parse(localStorage.getItem("zoomin"));
-    console.log(data)
+    display(data);
     function display(el) {
 
     // data.map(function (el) {
@@ -108,5 +110,5 @@
         document.querySelector("#dressdiv").append(card)
     // })
 }
-display(data);
+
 </script>
